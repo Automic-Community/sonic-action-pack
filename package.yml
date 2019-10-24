@@ -1,0 +1,13 @@
+# Package Build Configuration
+name: PCK.AUTOMIC_SONIC
+
+source: ae
+
+# binary object resource mapping will be defined here
+binaries:
+  
+  - object: RESOURCES/LIBS/PCK.AUTOMIC_SONIC.PRV.STORE
+    resources: 
+      - name: SONICSSHTOOL
+        type: BINARY
+        path: tools/target/sonic-ssh-tool.jar
