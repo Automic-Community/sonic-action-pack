@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_ERRORSTATUS">
+<HEADER state="1">
+<Title>Check error in execution</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[if($errors -eq 0){
+:INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.INFO
+}else{
+:INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.ERROR
+}
+__uc_return($errors)]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>
