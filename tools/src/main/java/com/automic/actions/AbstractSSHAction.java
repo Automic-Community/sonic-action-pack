@@ -1,7 +1,6 @@
 package com.automic.actions;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -27,7 +26,6 @@ import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.KeyPair;
 import com.jcraft.jsch.Session;
-
 /**
  * This class defines the execution of any action.It provides some initializations and validations on common inputs .The
  * child actions will implement its executeSpecific() method as per their own need.
@@ -157,13 +155,12 @@ public abstract class AbstractSSHAction extends AbstractAction {
      */
 
     public int executeSSHCommand(final SSHConnectionProperties connectionProps, final String command,
-            final StringBuilder stdout, final StringBuilder stderr, final int size, final String stdOutFilePath,
-            final String stdErrFilePath) throws AutomicException {
+            final StringBuilder stdout, final StringBuilder stderr, final int size) throws AutomicException {
         Session session = null;
         int ret = 0;
         try {
             session = createSession(connectionProps);
-            ret = executeCommand(command, stdout, stderr, size, stdOutFilePath, stdErrFilePath, session,tty,timeout);
+            ret = executeCommand(command, stdout, stderr, size, session,tty,timeout);
         } catch (final JSchException e) {
         	ConsoleWriter.writeln(e);
             ConsoleWriter.writeln("Can not create the connection, please check connection propertes.");
@@ -183,26 +180,21 @@ public abstract class AbstractSSHAction extends AbstractAction {
     }
 
     private int executeCommand(final String command, final StringBuilder stdout, final StringBuilder stderr,
-            final int size, final String stdOutFilePath, final String stdErrFilePath, final Session session,
+            final int size,final Session session,
             final boolean tty, final int timeOut) throws JSchException, IOException, TimeoutException, AutomicException {
         int result;
 
-        result = runSSHCommandInExecChannel(command, stdout, stderr, size, stdOutFilePath, stdErrFilePath, session,
+        result = runSSHCommandInExecChannel(command, stdout, stderr, size, session,
                 tty, timeOut);
 
         return result;
     }
 
-    private OutputStream getFileOutputStream(final String path) throws IOException {
-        if (path != null && !path.trim().isEmpty()) {
-            return new FileOutputStream(path);
-        }
-        return null;
-    }
+ 
 
     @SuppressWarnings("unchecked")
     public int runSSHCommandInExecChannel(final String command, final StringBuilder stdout, final StringBuilder stderr,
-            final int size, final String stdOutFilePath, final String stdErrFilePath, final Session session,
+            final int size, final Session session,
             final boolean usePty,final int timeOut) throws AutomicException, JSchException, IOException, TimeoutException {
         int result;
         ChannelExec channelExec = null;
@@ -229,9 +221,9 @@ public abstract class AbstractSSHAction extends AbstractAction {
             
             
             final Future<String> futureOut = executorOut
-                    .submit(new SSHStreamHandler(channelExec, inputStream, stdout, size, stdOutFilePath));
+                    .submit(new SSHStreamHandler(channelExec, inputStream, stdout, size));
             final Future<String> futureErr = executorErr
-                    .submit(new SSHStreamHandler(channelExec, errorStream, stderr, size, stdErrFilePath));
+                    .submit(new SSHStreamHandler(channelExec, errorStream, stderr, size));
 
             try {
                 if (timeOut <= 0) {
@@ -311,23 +303,19 @@ public abstract class AbstractSSHAction extends AbstractAction {
         InputStream in;
         StringBuilder outBuffer;
         int size;
-        String outPath;
 
         private SSHStreamHandler(final Channel channel, final InputStream in, final StringBuilder outBuffer,
-                final int size, final String outPath) {
+                final int size) {
             this.channel = channel;
             this.in = in;
             this.outBuffer = outBuffer;
             this.size = size;
-            this.outPath = outPath;
         }
 
         @Override
         public String call() throws AutomicException {
-            OutputStream os = null;
 
             try {
-                os = getFileOutputStream(outPath);
                 if (in != null && outBuffer != null) {
                     do {
                         final byte[] tmp = new byte[1024];
@@ -335,10 +323,6 @@ public abstract class AbstractSSHAction extends AbstractAction {
                             final int i = in.read(tmp, 0, 1024);
                             if (i < 0) {
                                 break;
-                            }
-                            if (os != null) {
-                                os.write(tmp, 0, i);
-                                os.flush();
                             }
                             final int remainingBytes = size - outBuffer.length();
                             if (outBuffer.length() < size) {
@@ -360,15 +344,7 @@ public abstract class AbstractSSHAction extends AbstractAction {
             	ConsoleWriter.writeln(e);
                 throw new AutomicException("Error occured while running command on remote ssh server");
 
-            } finally {
-                if (os != null) {
-                    try {
-                        os.close();
-                    } catch (final IOException e) {
-                    	ConsoleWriter.writeln(e);
-                    }
-                }
-            }
+            } 
             return null;
         }
 

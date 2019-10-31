@@ -1,10 +1,7 @@
 package com.automic.actions;
 
-import java.util.Arrays;
-
 import com.automic.cli.Cli;
 import com.automic.cli.CliOptions;
-import com.automic.constants.Constants;
 import com.automic.exception.AutomicException;
 
 /**
