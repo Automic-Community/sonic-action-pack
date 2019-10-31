@@ -1,0 +1,13 @@
+*** Settings ***
+Resource          ../../../Env/default.txt
+
+*** Variables ***
+#----Global-------------------------------------------------------------------------------------
+${SSH_HOST}       172.17.0.2
+${SSH_PORT}       22
+${SSH_USERNAME}    sonic
+${SSH_PASSWORD}    sonic
+${SSH_KEY}        ${EMPTY}
+${SSH_PASSPHRASE}    ${EMPTY}
+#----Run Command--------------------------------------------------------------------------------------------
+${Command}        show clock
