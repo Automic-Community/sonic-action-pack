@@ -14,7 +14,7 @@ Resource          ../../Resources/actions.txt
 *** Test Cases ***    OK_NOK    VLANID
 Delete VLAN with existing vlan id
                       [Tags]    main_scenarios
-                      OK        100
+                      OK        ${VLAN_ID}
 
 Delete VLAN with invalid vlan id
                       NOK       Invalid

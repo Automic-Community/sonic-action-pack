@@ -9,5 +9,9 @@ ${SSH_USERNAME}    sonic
 ${SSH_PASSWORD}    sonic
 ${SSH_KEY}        ${EMPTY}
 ${SSH_PASSPHRASE}    ${EMPTY}
+${VLAN_ID}        100
 #----Run Command--------------------------------------------------------------------------------------------
 ${Command}        show clock
+#----Add/Delete Member Port--------------------------------------------------------------------------------
+${Member_Name}    test
+${VLAN_ID_2}      101

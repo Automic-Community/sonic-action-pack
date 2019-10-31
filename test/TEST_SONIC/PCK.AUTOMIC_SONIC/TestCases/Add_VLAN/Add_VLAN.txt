@@ -14,7 +14,7 @@ Resource          ../../Resources/actions.txt
 *** Test Cases ***    OK_NOK    VLANID
 Add VLAN with non existing vlan id
                       [Tags]    main_scenarios
-                      OK        100
+                      OK        ${VLAN_ID}
 
 Add VLAN with invalid vlan id
                       NOK       Invalid
