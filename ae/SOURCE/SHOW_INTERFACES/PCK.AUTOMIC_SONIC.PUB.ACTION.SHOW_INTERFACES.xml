@@ -53,6 +53,13 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
@@ -67,13 +74,6 @@
 <UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
 <UC4RB_USE_SSH_SUDOs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SSH_SUDO#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">None</UC4RB_USE_SSH_SUDOs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -95,7 +95,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_SONIC.PRV.JOB.SHOW_INTERFACES@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<task Alias="SHOW_INTERFACES" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_SONIC.PRV.JOB.SHOW_INTERFACES@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -125,6 +125,13 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
@@ -139,13 +146,6 @@
 <UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
 <UC4RB_USE_SSH_SUDOs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SSH_SUDO#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">None</UC4RB_USE_SSH_SUDOs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -167,7 +167,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_SONIC.PRV.JOB.SHOW_INTERFACES@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
+<task Alias="SHOW_INTERFACES" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_SONIC.PRV.JOB.SHOW_INTERFACES@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
 <checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -197,6 +197,13 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
@@ -211,13 +218,6 @@
 <UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
 <UC4RB_USE_SSH_SUDOs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SSH_SUDO#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">None</UC4RB_USE_SSH_SUDOs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -256,6 +256,13 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
@@ -270,13 +277,6 @@
 <UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
 <UC4RB_USE_SSH_SUDOs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SSH_SUDO#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">None</UC4RB_USE_SSH_SUDOs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -343,6 +343,13 @@
 <Mode>0</Mode>
 </VALUE>
 </node>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" prptmode="1">
+<UC4RB_SONIC_INTERFC_DETLs.00 altview="0" haslist="0">description</UC4RB_SONIC_INTERFC_DETLs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" prptmode="1">
@@ -357,13 +364,6 @@
 <UC4RB_SSH_TTYs.00 altview="0" haslist="0">NO</UC4RB_SSH_TTYs.00>
 <UC4RB_USE_SSH_SUDOs.00 altview="0" haslist="0">None</UC4RB_USE_SSH_SUDOs.00>
 <UC4RB_SUDO_SSH_PASSWORDs.00 altview="0" haslist="0">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" prptmode="1">
-<UC4RB_SONIC_INTERFC_DETLs.00 altview="0" haslist="0">description</UC4RB_SONIC_INTERFC_DETLs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -397,7 +397,32 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_INTERFACES
+
+= General description =
+This Action willbeused to execute show interfaces command.
+
+= Inputs =
+- Interface Detail : Select which kind of interface information should be retrieved. E.g. Summary, Status
+
+= Behavior =
+(none)
+
+=Return Value=
+UC4RB_SONIC_OUTPUT# : Command Output as string
+
+= Outputs =
+* Return code is 0 in case of success.
+* Return code is non-zero in case of failure.
+
+= Rollback =
+(none)
+
+= Logging =
+Logs will be displayed in the AE report.
+
+]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>

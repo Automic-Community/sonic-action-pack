@@ -25,8 +25,14 @@
 </ATTR_VARA>
 <VARA state="1">
 <Variables>
-<row Name="description" Value="description" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Alias" Value="Alias" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Counters" Value="Counters" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Description" Value="Description" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="Port Channel" Value="Port Channel" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Status" Value="Status" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Summary" Value="Summary" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Transceiver Basic" Value="Transceiver Basic" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="Transceiver Details" Value="Transceiver Details" Value1="" Value2="" Value3="" Value4=""/>
 </Variables>
 </VARA>
 <DOCU_Docu state="1" type="text">
