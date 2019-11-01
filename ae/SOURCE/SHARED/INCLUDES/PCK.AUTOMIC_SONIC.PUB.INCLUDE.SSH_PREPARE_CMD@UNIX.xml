@@ -21,6 +21,8 @@
 !Connection Timeout
 : SET &UC4RB_JAVA_CMD# = STR_CAT(&UC4RB_JAVA_CMD#, " -conntimeout &UC4RB_SSH_CONN_TIMEOUT#")
 
+: SET &UC4RB_JAVA_CMD# = STR_CAT(&UC4RB_JAVA_CMD#, " -sshtimeout &UC4RB_SSH_TIMEOUT#")
+
 !Sudo
 : IF &UC4RB_USE_SSH_SUDO# EQ "Sudo"
 :   SET &UC4RB_JAVA_CMD# = STR_CAT(&UC4RB_JAVA_CMD#, " -sudo &UC4RB_USE_SSH_SUDO#")
