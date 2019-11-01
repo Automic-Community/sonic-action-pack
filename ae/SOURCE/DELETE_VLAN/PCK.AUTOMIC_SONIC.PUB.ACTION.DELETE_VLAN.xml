@@ -73,8 +73,7 @@
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN">
-<ELEMENT ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN"/>
-<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN"/>
+<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -146,8 +145,7 @@
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN">
-<ELEMENT ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN"/>
-<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN"/>
+<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -219,8 +217,7 @@
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN">
-<ELEMENT ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN"/>
-<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN"/>
+<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -279,8 +276,7 @@
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN">
-<ELEMENT ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN"/>
-<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN"/>
+<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -366,7 +362,9 @@
 </node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" prptmode="1"/>
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_VLAN" prptmode="1">
+<UC4RB_SONIC_VLAN_IDs.00 altview="0" haslist="0"/>
+</PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
@@ -399,7 +397,35 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_VLAN
+
+= General description =
+This action will Delete a VLAN on sonic.
+
+
+=Setup= 
+* For SSH, Enable SSH on the target system.
+
+= Inputs =
+- VLAN ID*                        : Provide ID of the VLAN to be deleted. E.g. 100
+
+= Failure Conditions =
+If the user provides invalid or not existing VLAN ID.
+If user will not provide sudo credentials properly.
+
+= Behaviour =
+User must use sudo with in SSH connection.
+
+=Return Value=
+(none)
+
+= Logging =
+Logs will be displayed in the AE report.
+
+= Example =
+* VLAN ID                                 : 100
+----------------------------------------------]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>
