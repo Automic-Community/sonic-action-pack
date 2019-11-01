@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_SONIC.PRV.INCLUDE.SHOW_INTERFACES_PREPARE_CMD">
+<HEADER state="1">
+<Title>Prepare Command</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[: SET &UC4RB_SONIC_SHOW_INTERFC_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_INTERFC_CMD#, "show interfaces ")
+: SWITCH &UC4RB_SONIC_INTERFC_DETL#
+:   CASE "Summary"
+:     SET &UC4RB_SONIC_SHOW_INTERFC_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_INTERFC_CMD#, "Summary ")
+:   CASE "Counters"
+:     SET &UC4RB_SONIC_SHOW_INTERFC_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_INTERFC_CMD#, "counters ")
+:   CASE "Status"
+:     SET &UC4RB_SONIC_SHOW_INTERFC_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_INTERFC_CMD#, "status ")
+:   CASE "Alias"
+:     SET &UC4RB_SONIC_SHOW_INTERFC_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_INTERFC_CMD#, "Alias ")
+:   CASE "Description"
+:     SET &UC4RB_SONIC_SHOW_INTERFC_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_INTERFC_CMD#, "description ")
+:   CASE "Port Channel"
+:     SET &UC4RB_SONIC_SHOW_INTERFC_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_INTERFC_CMD#, "portchannel ")
+:   CASE "Transceiver Basic"
+:     SET &UC4RB_SONIC_SHOW_INTERFC_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_INTERFC_CMD#, "Transceiver Basic")
+:   CASE "Transceiver Details"
+:     SET &UC4RB_SONIC_SHOW_INTERFC_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_INTERFC_CMD#, "Transceiver Details")
+: ENDSWITCH
+: PRINT &UC4RB_SONIC_SHOW_INTERFC_CMD#
+
+
+]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>

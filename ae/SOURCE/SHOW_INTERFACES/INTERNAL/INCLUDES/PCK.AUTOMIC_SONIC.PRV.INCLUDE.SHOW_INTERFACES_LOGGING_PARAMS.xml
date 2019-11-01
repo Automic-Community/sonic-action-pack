@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_SONIC.PRV.INCLUDE.SHOW_INTERFACES_LOGGING_PARAMS">
+<HEADER state="1">
+<Title>Logging Parameters</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[: SET &UC4RB_LOGGING_PARAMETER# = "Interface Detail"
+: SET &UC4RB_LOGGING_PARAMETER_VAL# = "&UC4RB_SONIC_INTERFC_DETL#"
+: INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.PARAM
+]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>

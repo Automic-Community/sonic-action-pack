@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_SONIC.PRV.INCLUDE.SHOW_INTERFACES_EXECUTE_COMMAND@UNIX">
+<HEADER state="1">
+<Title>Execute Command</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:     SET &UC4RB_TEMP_FILE_PATH# = STR_CAT(&AGENT_TEMPDIR#,"cmd2-&$RUNID#.txt")
+:     PUBLISH &UC4RB_TEMP_FILE_PATH#,,"WORKFLOW"
+:     SET &TEMP_FILE_PATH# = &UC4RB_TEMP_FILE_PATH#
+:     SET &FLAG#="true"
+:     INC PCK.AUTOMIC_SONIC.PRV.INCLUDE.SHOW_INTERFACES_PREPARE_CMD
+:     PRINT "Command Executed: &UC4RB_SONIC_SHOW_INTERFC_CMD#"
+:     SET &UC4RB_SSH_COMMAND# = &UC4RB_SONIC_SHOW_INTERFC_CMD#
+:     INC PCK.AUTOMIC_AIOPS.PUB.INCLUDE.SSH_RUN_COMMAND@UNIX
+      if(!$?) {
+        $errors = 1
+      }]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>
