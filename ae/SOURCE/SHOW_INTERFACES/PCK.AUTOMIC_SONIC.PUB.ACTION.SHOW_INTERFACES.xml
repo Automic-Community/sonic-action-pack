@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
 <JOBP AllowExternal="1" name="PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_INTERFACES">
 <XHEADER state="1">
-<Title>SHOW_INTERFACES</Title>
+<Title>Show Interfaces</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -53,13 +53,6 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
@@ -77,11 +70,18 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -120,18 +120,11 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
@@ -149,11 +142,18 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -192,18 +192,11 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
@@ -221,11 +214,18 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -256,13 +256,6 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
-<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
@@ -280,11 +273,18 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">
+<UC4RB_SONIC_INTERFC_DETLs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_INTERFC_DETL#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES">description</UC4RB_SONIC_INTERFC_DETLs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">
-<AGENTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
-<LOGINs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT"/>
+<AGENTs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="AGENT#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 ReadFromTable="OPUD" altview="1" haslist="0" msginsert="" msgnr="" promptname="LOGIN#" promptsetname="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -340,15 +340,8 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
-</node>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" prptmode="1">
-<UC4RB_SONIC_INTERFC_DETLs.00 altview="0" haslist="0">description</UC4RB_SONIC_INTERFC_DETLs.00>
-</PRPTBOX>
-</PROMPTSET>
 </node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" ontop="1">
@@ -367,11 +360,18 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.SHOW_INTERFACES" prptmode="1">
+<UC4RB_SONIC_INTERFC_DETLs.00 altview="0" haslist="0">description</UC4RB_SONIC_INTERFC_DETLs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" ontop="1">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" prptmode="1">
-<AGENTs.00 altview="0" haslist="0"/>
-<LOGINs.00 altview="0" haslist="0"/>
+<AGENTs.00 altview="1" haslist="0">&amp;AGENT#</AGENTs.00>
+<LOGINs.00 altview="1" haslist="0">&amp;LOGIN#</LOGINs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -401,7 +401,10 @@
 PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_INTERFACES
 
 = General description =
-This Action willbeused to execute show interfaces command.
+This Action will be used to execute show interfaces command.
+
+=Setup= 
+* For SSH, Enable SSH on the target system.
 
 = Inputs =
 - Interface Detail : Select which kind of interface information should be retrieved. E.g. Summary, Status
