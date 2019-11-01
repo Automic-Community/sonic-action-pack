@@ -3,12 +3,13 @@ Resource          ../../../Env/default.txt
 
 *** Variables ***
 #----Global-------------------------------------------------------------------------------------
-${SSH_HOST}       172.17.0.2
-${SSH_PORT}       22
+${SSH_HOST}       10.108.48.139
+${SSH_PORT}       3040
 ${SSH_USERNAME}    sonic
 ${SSH_PASSWORD}    sonic
 ${SSH_KEY}        ${EMPTY}
 ${SSH_PASSPHRASE}    ${EMPTY}
+${Sudo_Pass}      sonic
 ${VLAN_ID}        100
 #----Run Command--------------------------------------------------------------------------------------------
 ${Command}        show clock

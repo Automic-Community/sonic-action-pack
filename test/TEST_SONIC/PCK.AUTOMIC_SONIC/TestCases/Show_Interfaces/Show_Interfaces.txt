@@ -11,31 +11,27 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    InterfaceDetail
+*** Test Cases ***    OK_NOK                                  InterfaceDetail
 Show Interfaces Summary
-                      [Tags]    main_scenarios
-                      OK        Summary
+                      [Tags]                                  main_scenarios
+                      OK                                      Summary
 
 Show Interfaces Status
-                      OK        Status
-
-Show Interfaces Alias
-                      OK        Alias
+                      OK                                      Status
+                      #Show Interfaces Alias
+                      #                                       OK                 Alias
 
 Show Interfaces Description
-                      OK        Description
+                      OK                                      Description
 
 Show Interfaces Counters
-                      OK        Counters
-
-Show Interfaces Port Channel
-                      OK        Port Channel
-
-Show Interfaces Transceiver Basic
-                      OK        Transceiver Basic
-
-Show Interfaces Transceiver Details
-                      OK        Transceiver Details
+                      OK                                      Counters
+                      #Show Interfaces Port Channel
+                      #                                       OK                 Port Channel
+                      #Show Interfaces Transceiver Basic
+                      #                                       OK                 Transceiver Basic
+                      #Show Interfaces Transceiver Details
+                      #                                       OK                 Transceiver Details
 
 *** Keywords ***
 Startup
@@ -45,16 +41,17 @@ Startup
 
 Show Interfaces Template
     [Arguments]    ${OK_NOK}    ${InterfaceDetail}
-    [Documentation]    This action tests the feature of Show Interfaces
+    [Documentation]    This action tests the feature of Show Interfaces.
+    ...    -Note: Commented test cases as they are not working on current setup.
     ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
     ...    -${InterfaceDetail}: This field specify kind of interface information should be retrieved.
     Generate String
     Init Action    ${SHOW_INTERFACES_ACTION}
     Connect using SSH
-    Action Set    &UC4RB_SONIC_INTERF_DETAILS#    ${InterfaceDetail}
+    Action Set    &UC4RB_SONIC_INTERFC_DETL#    ${InterfaceDetail}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
-    Run Keyword If    '${OK_NOK}' == 'OK'    Action Variable Should Be Found    &UC4RB_SONIC_OUTPUT#    ELSE    Action Variable Should Not Be Found    &UC4RB_SONIC_OUTPUT#
+    Run Keyword If    '${OK_NOK}' == 'OK'    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT#    ELSE    Action Object Variable Should Not Be Found    &UC4RB_SONIC_OUTPUT#
 
 Teardown
     Log    *******End Test "SHOW INTERFACES"*******

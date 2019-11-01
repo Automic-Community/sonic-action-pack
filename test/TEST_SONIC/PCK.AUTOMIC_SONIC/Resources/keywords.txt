@@ -115,11 +115,13 @@ Init Action
 
 Connect using SSH
     Action Set    &UC4RB_SSH_HOST#    ${SSH_HOST}
-    Action Set    &UC4RB_SSH_PORT#    22
+    Action Set    &UC4RB_SSH_PORT#    ${SSH_PORT}
     Action Set    &UC4RB_SSH_USERNAME#    ${SSH_USERNAME}
     Action Set    &UC4RB_SSH_PASSWORD#    ${SSH_PASSWORD}
     Action Set    &UC4RB_SSH_KEY#    ${SSH_KEY}
     Action Set    &UC4RB_SSH_PASSPHRASE#    ${SSH_PASSPHRASE}
     Action Set    &UC4RB_SSH_HOST_KEY_CHECK#    NO
     Action Set    &UC4RB_SSH_CONN_TIMEOUT#    30
-
+    Action Set    &UC4RB_SSH_TTY#    NO
+    Action Set    &UC4RB_USE_SSH_SUDO#    Sudo
+    Action Set    &UC4RB_SUDO_SSH_PASSWORD#    ${Sudo_Pass}
