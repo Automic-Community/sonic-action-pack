@@ -397,7 +397,32 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_INTERFACES
+
+= General description =
+This Action willbeused to execute show interfaces command.
+
+= Inputs =
+- Interface Detail : Select which kind of interface information should be retrieved. E.g. Summary, Status
+
+= Behavior =
+(none)
+
+=Return Value=
+UC4RB_SONIC_OUTPUT# : Command Output as string
+
+= Outputs =
+* Return code is 0 in case of success.
+* Return code is non-zero in case of failure.
+
+= Rollback =
+(none)
+
+= Logging =
+Logs will be displayed in the AE report.
+
+]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>
