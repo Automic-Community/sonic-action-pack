@@ -146,7 +146,7 @@
       }
 
 !!------------------------------------------ ERROR HANDLING ----------------------------------------------------
-: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_ERRORSTATUS]]></MSCRI>
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_JOBSTATUS@WIN]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
