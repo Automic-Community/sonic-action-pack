@@ -43,9 +43,9 @@ Add Member Port to VLAN Template
     Connect using SSH
     Run Keyword If    '${VLANID}' == 'Invalid'    Action Set    &UC4RB_SONIC_VLAN_ID#    ${Generated_Name}    ELSE    Action Set
     ...    &UC4RB_SONIC_VLAN_ID#    ${VLANID}
-    Run Keyword If    '${MemberName}' == 'Invalid'    Action Set    &UC4B_SONIC_MEMBER_PORT#    ${Generated_Name}    ELSE    Action Set
-    ...    &UC4B_SONIC_MEMBER_PORT#    ${MemberName}
-    Action Set    &UC4B_SONIC_UNTAGGED#    ${Untagged}
+    Run Keyword If    '${MemberName}' == 'Invalid'    Action Set    &UC4RB_SONIC_MEMBER_PORT#    ${Generated_Name}    ELSE    Action Set
+    ...    &UC4RB_SONIC_MEMBER_PORT#    ${MemberName}
+    Action Set    &UC4RB_SONIC_UNTAGGED#    ${Untagged}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
 

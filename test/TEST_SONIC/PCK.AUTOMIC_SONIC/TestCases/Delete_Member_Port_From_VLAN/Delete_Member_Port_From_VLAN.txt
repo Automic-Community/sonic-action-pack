@@ -29,7 +29,7 @@ Startup
     Connect AE
 
 Delete Member Port from VLAN Template
-    [Arguments]    ${OK_NOK}    ${VLANID}    ${MemberName}    ${Untagged}
+    [Arguments]    ${OK_NOK}    ${VLANID}    ${MemberName}
     [Documentation]    This action tests the feature of Delete Member Port from VLAN.
     ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
     ...    -${VLANID}: This field specify ID of the VLAN from remove new member port.
