@@ -73,9 +73,8 @@
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
-<ELEMENT ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
-<UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
-<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -122,7 +121,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
@@ -147,9 +146,8 @@
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
-<ELEMENT ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
-<UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
-<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -196,7 +194,7 @@
 <node content="1" id="PVALUE" name="Parent Variables" parent="" type="TASKVALUE">
 <VALUE state="2">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
@@ -221,9 +219,8 @@
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
-<ELEMENT ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
-<UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
-<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -282,9 +279,8 @@
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
-<ELEMENT ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="ELEMENT" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
-<UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
-<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -348,7 +344,7 @@
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
 <Values/>
-<Mode>0</Mode>
+<Mode>1</Mode>
 </VALUE>
 </node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PRPTS" type="PROMPTSET">
@@ -370,7 +366,10 @@
 </node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" prptmode="1"/>
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" prptmode="1">
+<UC4RB_SONIC_VLAN_IDs.00 altview="0" haslist="0"/>
+<UC4B_SONIC_MEMBER_PORTs.00 altview="0" haslist="0"/>
+</PRPTBOX>
 </PROMPTSET>
 </node>
 <node content="1" id="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" name="PCK.ITPA_SHARED.PRV.PROMPTSET.OVERWRITE_AGENT" parent="PRPTS" type="PROMPTSET">
@@ -410,25 +409,19 @@ PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_MEMBER_PORT_FROM_VLAN
 This action will Delete a member port from VLAN on sonic.
 
 
-=Setup= 
-* For SSH, Enable SSH on the target system.
-
 = Inputs =
 - VLAN ID*                        : Provide ID of the VLAN to be deleted. E.g. 100
 - Member Port*                    : Provide Member Port name to removed from the VLAN. E.g. Ethernet4
 
 = Failure Conditions =
 If the user provides invalid or not existing VLAN ID or Member port.
-If user will not provide sudo credentials properly.
+If the user will not provide Sudo credentials properly.
 
 = Behaviour =
-User must use sudo with in SSH connection.
+Users must use Sudo with in SSH connection.
 
 =Return Value=
 (none)
-
-= Logging =
-Logs will be displayed in the AE report.
 
 = Example =
 * VLAN ID                                 : 100
