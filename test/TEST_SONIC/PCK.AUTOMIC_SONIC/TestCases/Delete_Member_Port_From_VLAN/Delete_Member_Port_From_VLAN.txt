@@ -19,9 +19,6 @@ Delete Member Port from VLAN
 Delete Member Port from VLAN with invalid vlan id i.e. non integer
                       NOK       Invalid           ${Member_Name}
 
-Delete Member Port from VLAN with invalid Member Name i.e. non integer
-                      NOK       ${VLAN_ID}        Invalid
-
 *** Keywords ***
 Startup
     Log    *******Start Test "DELETE MEMBER PORT FROM VLAN"*******
