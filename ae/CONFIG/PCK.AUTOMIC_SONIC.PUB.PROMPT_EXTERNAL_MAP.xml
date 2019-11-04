@@ -25,16 +25,22 @@
 </ATTR_VARA>
 <VARA state="1">
 <Variables>
-<row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_MEMBER_PORT_FROM_VLAN/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
-<row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_MEMBER_PORT_FROM_VLAN/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.ADD_VLAN/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.ADD_VLAN/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_MEMBER_PORT_FROM_VLAN/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_MEMBER_PORT_FROM_VLAN/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_VLAN/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_VLAN/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.RUN_SONIC_COMMAND/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.RUN_SONIC_COMMAND/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_ARP_TABLE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_ARP_TABLE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_INTERFACES/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_INTERFACES/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_RUNNING_CONFIGURATION/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_RUNNING_CONFIGURATION/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_SESSION/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_SESSION/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 </Variables>
 </VARA>
 <DOCU_Docu state="1" type="text">
