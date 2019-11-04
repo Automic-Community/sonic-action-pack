@@ -11,13 +11,13 @@ Resource          ../../Resources/keywords.txt
 Resource          ../../Resources/variables.txt
 Resource          ../../Resources/actions.txt
 
-*** Test Cases ***    OK_NOK    Command           Timeout
+*** Test Cases ***    OK_NOK    Command
 Run Command with valid command
                       [Tags]    main_scenarios
-                      OK        ${Command}        10
+                      OK        ${Command}
 
 Run Command with invalid Command
-                      NOK       Invalid           10
+                      NOK       Invalid
 
 *** Keywords ***
 Startup
@@ -26,17 +26,15 @@ Startup
     Connect AE
 
 Run Command Template
-    [Arguments]    ${OK_NOK}    ${Command}    ${Timeout}
+    [Arguments]    ${OK_NOK}    ${Command}
     [Documentation]    This action tests the feature of Run Command
     ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
     ...    -${Command}: This field specify the command to execute on target.
-    ...    -${Timeout}: This field specify timeout in milliseconds to wait for action to complete.
     Generate String
     Init Action    ${RUN_COMMAND_ACTION}
     Connect using SSH
     Run Keyword If    '${Command}' == 'Invalid'    Action Set    &UC4RB_SONIC_COMMAND#    ${Generated_Name}_${Time}    ELSE    Action Set
     ...    &UC4RB_SONIC_COMMAND#    ${Command}
-    Action Set    &UC4RB_SONIC_TIMEOUT#    ${Timeout}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
     Run Keyword If    '${OK_NOK}' == 'OK'    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT#    ELSE    Action Object Variable Should Not Be Found    &UC4RB_SONIC_OUTPUT#
