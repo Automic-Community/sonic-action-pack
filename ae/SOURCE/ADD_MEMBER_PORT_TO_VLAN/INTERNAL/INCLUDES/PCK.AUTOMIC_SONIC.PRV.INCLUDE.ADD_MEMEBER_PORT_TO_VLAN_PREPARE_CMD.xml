@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_SONIC.PRV.INCLUDE.ADD_MEMEBER_PORT_TO_VLAN_PREPARE_CMD">
+<HEADER state="1">
+<Title>Prepare Command</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:SET &UC4RB_SONIC_ADD_MEMBR_VLAN_CMD# = STR_CAT(&UC4RB_SONIC_ADD_MEMBR_VLAN_CMD#, " config vlan member add &UC4RB_SONIC_VLAN_ID# ")
+:SET &UC4RB_SONIC_ADD_MEMBR_VLAN_CMD# = STR_CAT(&UC4RB_SONIC_ADD_MEMBR_VLAN_CMD#, "&UC4B_SONIC_MEMBER_PORT# ")
+:IF &UC4RB_SONIC_UNTAGGED# EQ "true"
+:  SET &UC4RB_SONIC_ADD_MEMBR_VLAN_CMD# = STR_CAT(&UC4RB_SONIC_ADD_MEMBR_VLAN_CMD#, "-u ")
+:ENDIF
+:PRINT &UC4RB_SONIC_ADD_MEMBR_VLAN_CMD#]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>
