@@ -39,7 +39,7 @@ Run Command Template
     Action Set    &UC4RB_SONIC_TIMEOUT#    ${Timeout}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
-    Run Keyword If    '${OK_NOK}' == 'OK'    Action Variable Should Be Found    &UC4RB_SONIC_OUTPUT#    ELSE    Action Variable Should Not Be Found    &UC4RB_SONIC_OUTPUT#
+    Run Keyword If    '${OK_NOK}' == 'OK'    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT#    ELSE    Action Object Variable Should Not Be Found    &UC4RB_SONIC_OUTPUT#
 
 Teardown
     Log    *******End Test "RUN_COMMAND"*******
