@@ -395,7 +395,20 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_SYSTEM_MEMORY
+
+= General description =
+This action displays the system memory.
+
+=Setup= 
+* For SSH, Enable SSH on the target system.
+
+=Return Value=
+UC4RB_SONIC_OUTPUT:  Variable containing sonic system memory details.
+
+= Logging =
+Logs will be displayed in the AE report.]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>

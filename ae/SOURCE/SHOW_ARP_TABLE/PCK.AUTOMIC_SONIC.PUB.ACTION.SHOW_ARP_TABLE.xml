@@ -400,7 +400,23 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_ARP_TABLE
+
+= General description =
+This action displays an ARP table.
+
+=Setup= 
+* For SSH, Enable SSH on the target system.
+
+= Inputs =
+(none)
+
+=Return Value=
+UC4RB_SONIC_OUTPUT: Variable Containing the ARP Table.
+
+= Logging =
+Logs will be displayed in the AE report.]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>

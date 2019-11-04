@@ -400,7 +400,23 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_SESSION
+
+= General description =
+This action displays the session details.
+
+=Setup= 
+* For SSH, Enable SSH on the target system.
+
+= Inputs =
+(none)
+
+=Return Value=
+UC4RB_SONIC_OUTPUT:  Variable containing the session details.
+
+= Logging =
+Logs will be displayed in the AE report.]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>
