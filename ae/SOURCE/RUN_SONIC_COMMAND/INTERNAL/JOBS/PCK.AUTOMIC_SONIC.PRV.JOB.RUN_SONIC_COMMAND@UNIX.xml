@@ -159,7 +159,7 @@
 
 :       IF &FLAG# EQ 0
 :         SET &FLAG# = STR_FIND(&VALUE#, "OUTPUT:")
-:         SET &VALUE# = STR_SUBSTITUTE(&VALUE#, "OUTPUT:", "")
+:         SET &VALUE# = STR_SUBSTITUTE(&VALUE#, &VALUE#, " ")
 :       ENDIF
 
 :       IF &FLAG# NE 0

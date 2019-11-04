@@ -74,8 +74,8 @@
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">
-<UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN"/>
-<UC4RB_SONIC_UNTAGGEDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_UNTAGGED#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">false</UC4RB_SONIC_UNTAGGEDs.00>
+<UC4RB_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN"/>
+<UC4RB_SONIC_UNTAGGEDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_UNTAGGED#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">False</UC4RB_SONIC_UNTAGGEDs.00>
 <UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -149,8 +149,8 @@
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">
-<UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN"/>
-<UC4RB_SONIC_UNTAGGEDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_UNTAGGED#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">false</UC4RB_SONIC_UNTAGGEDs.00>
+<UC4RB_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN"/>
+<UC4RB_SONIC_UNTAGGEDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_UNTAGGED#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">False</UC4RB_SONIC_UNTAGGEDs.00>
 <UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -224,8 +224,8 @@
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">
-<UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN"/>
-<UC4RB_SONIC_UNTAGGEDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_UNTAGGED#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">false</UC4RB_SONIC_UNTAGGEDs.00>
+<UC4RB_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN"/>
+<UC4RB_SONIC_UNTAGGEDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_UNTAGGED#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">False</UC4RB_SONIC_UNTAGGEDs.00>
 <UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -286,8 +286,8 @@
 <node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">
-<UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN"/>
-<UC4RB_SONIC_UNTAGGEDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_UNTAGGED#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">false</UC4RB_SONIC_UNTAGGEDs.00>
+<UC4RB_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN"/>
+<UC4RB_SONIC_UNTAGGEDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_UNTAGGED#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN">False</UC4RB_SONIC_UNTAGGEDs.00>
 <UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -377,8 +377,8 @@
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.ADD_MEMBER_PORT_TO_VLAN" prptmode="1">
 <UC4RB_SONIC_VLAN_IDs.00 altview="0" haslist="0"/>
-<UC4B_SONIC_MEMBER_PORTs.00 altview="0" haslist="0"/>
-<UC4RB_SONIC_UNTAGGEDs.00 altview="0" haslist="0">false</UC4RB_SONIC_UNTAGGEDs.00>
+<UC4RB_SONIC_MEMBER_PORTs.00 altview="0" haslist="0"/>
+<UC4RB_SONIC_UNTAGGEDs.00 altview="0" haslist="0">False</UC4RB_SONIC_UNTAGGEDs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -424,14 +424,14 @@ This Action will add member port to existing VLAN.
 = Inputs =
 - VLAN ID*                        : Provide ID of the VLAN to add new member port. E.g. 100
 - Member Port*                    : Provide Member Port number to add to the VLAN. E.g. Ethernet4
-- Untagged                        : Specify whether if member port is untagged or not.ÂEg. false
+- Untagged                        : Specify whether if member port is untagged or not. Eg. false
 
 = Failure Conditions =
 If the user provides invalid  VLAN ID or VLAN ID doesn't exists. or Member port.
 If user will not provide sudo credentials properly.
 
 = Behaviour =
-User must use sudo with in SSH connection.
+(none)
 
 =Return Value=
 (none)

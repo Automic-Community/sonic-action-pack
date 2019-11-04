@@ -171,7 +171,7 @@
 
 :       IF &FLAG# EQ 0
 :         SET &FLAG# = STR_FIND(&VALUE#, "OUTPUT:")
-:         SET &VALUE# = STR_SUBSTITUTE(&VALUE#, "OUTPUT:", "")
+:         SET &VALUE# = STR_SUBSTITUTE(&VALUE#, &VALUE#, " ")
 :       ENDIF
 
 :       IF &FLAG# NE 0
@@ -181,9 +181,10 @@
 
 :   ENDPROCESS
 :   CLOSE_PROCESS &HND#
-
 : ENDIF
 : PUBLISH &UC4RB_SONIC_OUTPUT#,,WORKFLOW
+
+
 ]]></OSCRI>
 </POST_SCRIPT>
 <DOCU_Docu state="1" type="text">

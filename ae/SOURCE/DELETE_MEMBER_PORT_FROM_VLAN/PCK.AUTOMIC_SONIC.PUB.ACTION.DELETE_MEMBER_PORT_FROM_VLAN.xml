@@ -63,6 +63,7 @@
 <UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SSH_PASSWORDs.00>
 <UC4RB_SSH_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
+<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
 <UC4RB_SSH_TTYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
 <UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
@@ -74,6 +75,7 @@
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
 <UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<UC4RB_SONIC_MEMBER_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
 <UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -136,6 +138,7 @@
 <UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SSH_PASSWORDs.00>
 <UC4RB_SSH_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
+<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
 <UC4RB_SSH_TTYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
 <UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
@@ -147,6 +150,7 @@
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
 <UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<UC4RB_SONIC_MEMBER_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
 <UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -209,6 +213,7 @@
 <UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SSH_PASSWORDs.00>
 <UC4RB_SSH_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
+<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
 <UC4RB_SSH_TTYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
 <UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
@@ -220,6 +225,7 @@
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
 <UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<UC4RB_SONIC_MEMBER_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
 <UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -269,6 +275,7 @@
 <UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SSH_PASSWORDs.00>
 <UC4RB_SSH_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
+<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
 <UC4RB_SSH_TTYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
 <UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
@@ -280,6 +287,7 @@
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
 <UC4B_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4B_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<UC4RB_SONIC_MEMBER_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
 <UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
 </PRPTBOX>
 </PROMPTSET>
@@ -358,6 +366,7 @@
 <UC4RB_SSH_PASSPHRASEs.00 altview="0" haslist="0"/>
 <UC4RB_SSH_HOST_KEY_CHECKs.00 altview="0" haslist="0">NO</UC4RB_SSH_HOST_KEY_CHECKs.00>
 <UC4RB_SSH_CONN_TIMEOUTs.00 altview="0" haslist="0">30</UC4RB_SSH_CONN_TIMEOUTs.00>
+<UC4RB_SSH_TIMEOUTs.00 altview="0" haslist="0">30</UC4RB_SSH_TIMEOUTs.00>
 <UC4RB_SSH_TTYs.00 altview="0" haslist="0">NO</UC4RB_SSH_TTYs.00>
 <UC4RB_USE_SSH_SUDOs.00 altview="0" haslist="0">None</UC4RB_USE_SSH_SUDOs.00>
 <UC4RB_SUDO_SSH_PASSWORDs.00 altview="0" haslist="0">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
@@ -368,7 +377,6 @@
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" prptmode="1">
 <UC4RB_SONIC_VLAN_IDs.00 altview="0" haslist="0"/>
-<UC4B_SONIC_MEMBER_PORTs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -418,7 +426,7 @@ If the user provides invalid or not existing VLAN ID or Member port.
 If the user will not provide Sudo credentials properly.
 
 = Behaviour =
-Users must use Sudo with in SSH connection.
+(none)
 
 =Return Value=
 (none)
