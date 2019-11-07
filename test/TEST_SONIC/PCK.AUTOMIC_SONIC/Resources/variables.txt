@@ -16,3 +16,5 @@ ${Command}        show clock
 #----Add/Delete Member Port--------------------------------------------------------------------------------
 ${Member_Name}    test
 ${VLAN_ID_2}      101
+#------Load/Reload Configuration----------------------------------------------------------------------------
+${Config_File}    /etc/sonic/config_db.json
