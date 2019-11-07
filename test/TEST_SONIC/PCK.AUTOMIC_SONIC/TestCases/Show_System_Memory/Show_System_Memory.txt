@@ -1,0 +1,45 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        show_system_memory
+Test Template     Show System Memory Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    SSHHost           SSHPort        SSHUsername        SSHPassword
+Show system memory for valid SSH connection details
+                      [Tags]    main_scenarios
+                      OK        ${SSH_HOST}       ${SSH_PORT}    ${SSH_USERNAME}    ${SSH_PASSWORD}
+
+Show system memory for invalid SSH connection details
+                      NOK       Invalid           1234           Invalid            Invalid
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "SHOW SYSTEM MEMORY"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Show System Memory Template
+    [Arguments]    ${OK_NOK}    ${SSHHost}    ${SSHPort}    ${SSHUsername}    ${SSHPassword}
+    [Documentation]    This action displays the system memory.
+    ...    -Note: Commented test cases as they are not working on current setup.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${SSHHost}: This field specifies SSH Host details.
+    ...    -${SSHPort}: This field specifies SSH Port details.
+    ...    -${SSHUsername}: This field specifies SSH username.
+    ...    -${SSHPassword}: This field specifies SSH password.
+    Generate String
+    Init Action    ${SHOW_SYSTEM_MEMORY}
+    Connect using SSH
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
+    Run Keyword If    '${OK_NOK}' == 'OK'    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT#    ELSE    Action Object Variable Should Not Be Found    &UC4RB_SONIC_OUTPUT#
+
+Teardown
+    Log    *******End Test "SHOW SYSTEM MEMORY"*******
