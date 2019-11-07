@@ -406,9 +406,6 @@ PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_SESSION
 = General description =
 This action displays the session details.
 
-=Setup= 
-* For SSH, Enable SSH on the target system.
-
 = Inputs =
 (none)
 

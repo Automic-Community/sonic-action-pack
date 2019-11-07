@@ -406,9 +406,6 @@ PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_ARP_TABLE
 = General description =
 This action displays an ARP table.
 
-=Setup= 
-* For SSH, Enable SSH on the target system.
-
 = Inputs =
 (none)
 
