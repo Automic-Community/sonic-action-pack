@@ -401,9 +401,6 @@ PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_SYSTEM_MEMORY
 = General description =
 This action displays the system memory.
 
-=Setup= 
-* For SSH, Enable SSH on the target system.
-
 =Return Value=
 UC4RB_SONIC_OUTPUT:  Variable containing sonic system memory details.
 

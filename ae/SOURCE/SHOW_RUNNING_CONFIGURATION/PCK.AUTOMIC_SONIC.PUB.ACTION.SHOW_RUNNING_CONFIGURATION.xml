@@ -439,9 +439,6 @@ PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_RUNNING_CONFIGURATION
 = General description =
 This action displays the running configuration details.
 
-=Setup= 
-* For SSH, Enable SSH on the target system.
-
 = Inputs =
 - Configuration Detail:              Select which kind of configuration information should be retrieved. Default: BGP
 
