@@ -125,16 +125,17 @@
 :INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.ATTACH_RESOURCE
 
 : INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.LOGGING_SSH_PARAM
 ! Status messages
 : SET &UC4RB_LOGGING_INFO# = "******** SHOW ADD VLAN EXECUTED  ********"
 : SET &UC4RB_LOGGING_ERROR# = "******** SHOW ADD VLAN ACTION FAILED ********"
 
 : SET &UC4RB_LOGGING_PARAMETER# = "ADD VLAN"
-: SET &UC4RB_LOGGING_PARAMETER_VAL# = "cmd-&$RUNID#"
+: SET &UC4RB_LOGGING_PARAMETER_VAL# = "&UC4RB_SONIC_VLAN_ID#"
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.PARAM
 
 !   Execute Command
-:   SET &UC4RB_SSH_COMMAND# = "config vlan add &UC4RB_VLAN_NUMBER#"
+:   SET &UC4RB_SSH_COMMAND# = "config vlan add &UC4RB_SONIC_VLAN_ID#"
 
 ! flag true includes output in job report
 :   SET &FLAG# = "true"
@@ -145,11 +146,13 @@
       }
 
 !!------------------------------------------ ERROR HANDLING ----------------------------------------------------
-: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_ERRORSTATUS]]></MSCRI>
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_JOBSTATUS@WIN]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
-<filterobjects/>
+<filterobjects>
+<row Icon="FILTER" condition="true" execute="" filter="PCK.AUTOMIC_SONIC.PRV.FILTER.SSH_ERROR" lnr="1" return="9" statustext=""/>
+</filterobjects>
 <HostFsc/>
 <LoginFsc/>
 </OUTPUTSCAN>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBS_WINDOWS AttrType="WINDOWS" name="PCK.AUTOMIC_SONIC.PRV.JOB.DELETE_MEMBER_PORT_FROM_VLAN@WINDOWS">
+<JOBS_UNIX AttrType="UNIX" name="PCK.AUTOMIC_SONIC.PRV.JOB.ADD_MEMBER_PORT_TO_VLAN@UNIX">
 <XHEADER state="1">
-<Title/>
+<Title>Add Member Port To VLAN</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -17,8 +17,8 @@
 <ATTR_JOBS state="1">
 <Queue>CLIENT_QUEUE</Queue>
 <StartType/>
-<HostDst>|&lt;WIN&gt;|HOST</HostDst>
-<HostATTR_Type>WINDOWS</HostATTR_Type>
+<HostDst>|&lt;UNIX&gt;|HOST</HostDst>
+<HostATTR_Type>UNIX</HostATTR_Type>
 <CodeName/>
 <Login/>
 <IntAccount/>
@@ -40,25 +40,17 @@
 <MpElse2>0</MpElse2>
 <TZ/>
 </ATTR_JOBS>
-<ATTR_WINDOWS state="1">
+<ATTR_UNIX state="1">
 <OutputDb>1</OutputDb>
 <OutputDbErr>0</OutputDbErr>
 <OutputFile>0</OutputFile>
-<IsGenerated>0</IsGenerated>
-<BAT>0</BAT>
-<COM>0</COM>
-<WinBatch>1</WinBatch>
-<Standard>1</Standard>
-<Minimized>0</Minimized>
-<Maximized>0</Maximized>
-<JObjDefault>1</JObjDefault>
-<JObjYes>0</JObjYes>
-<JObjNo>0</JObjNo>
-<WorkingDirectory>c:\</WorkingDirectory>
-<Command/>
-<LogOn>0</LogOn>
-<ShowJob>0</ShowJob>
-</ATTR_WINDOWS>
+<ShellScript>1</ShellScript>
+<Command>0</Command>
+<Priority>0</Priority>
+<Shell/>
+<ShellOptions/>
+<Com/>
+</ATTR_UNIX>
 <RUNTIME state="1">
 <MaxRetCode>0</MaxRetCode>
 <MrcExecute/>
@@ -115,37 +107,29 @@
 <PSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.PREPARE_JOB]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
-<MSCRI><![CDATA[$errors = 0
-: INC PCK.ITPA_SHARED.PUB.INCLUDE.POWERSHELL_UTILITY
+<MSCRI><![CDATA[: DEFINE &STRING_ARR#, string, 30
+: INC PCK.ITPA_SHARED.PUB.INCLUDE.SUDOERS_HEADER
 !-----------Building command arguments-------------
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.HEADER.EXECUTION
-
 : INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN
 : INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.LOGGING_SSH_PARAM
+: INC PCK.AUTOMIC_SONIC.PRV.INCLUDE.ADD_MEMBER_PORT_TO_VLAN_LOGGING_PARAMS
 ! Status messages
-: SET &UC4RB_LOGGING_INFO# = "******** DELETE MEMBER PORT FROM VLAN ACTION EXECUTED  ********"
-: SET &UC4RB_LOGGING_ERROR# = "******** DELETE MEMBER PORT FROM VLAN ACTION FAILED ********"
-
-: SET &UC4RB_LOGGING_PARAMETER# = "VLAN ID"
-: SET &UC4RB_LOGGING_PARAMETER_VAL# = "&UC4RB_SONIC_VLAN_ID#"
-: INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.PARAM
-
-: SET &UC4RB_LOGGING_PARAMETER# = "Member Port"
-: SET &UC4RB_LOGGING_PARAMETER_VAL# = "&UC4RB_SONIC_MEMBER_PORT#"
-: INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.PARAM
+: SET &UC4RB_LOGGING_INFO# = "******** ADD MEMBER PORT TO VLAN ACTION EXECUTED  ********"
+: SET &UC4RB_LOGGING_ERROR# = "******** ADD MEMBER PORT TO VLAN ACTION FAILED ********"
 
 :INC PCK.ITPA_SHARED.PUB.INCLUDE.ATTACH
 :INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.ATTACH_RESOURCE
 
+!Execute Command
+: INC PCK.AUTOMIC_SONIC.PRV.INCLUDE.ADD_MEMBER_PORT_TO_VLAN_EXECUTE_COMMAND
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.SSH_RUN_COMMAND@UNIX
 
-:SET &UC4RB_SSH_COMMAND# = " config vlan member del &UC4RB_SONIC_VLAN_ID# &UC4RB_SONIC_MEMBER_PORT# "
-
-:INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.SSH_RUN_COMMAND@WIN
-      if(!$?) {
-        $errors = 1
-      }
 !------------------------------------------ ERROR HANDLING ----------------------------------------------------
-: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_JOBSTATUS@WIN]]></MSCRI>
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_JOBSTATUS@UNIX
+: INC PCK.ITPA_SHARED.PUB.INCLUDE.SUDOERS_FOOTER
+
+]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
@@ -161,5 +145,5 @@
 <DOCU_Docu state="1" type="text">
 <DOC/>
 </DOCU_Docu>
-</JOBS_WINDOWS>
+</JOBS_UNIX>
 </uc-export>

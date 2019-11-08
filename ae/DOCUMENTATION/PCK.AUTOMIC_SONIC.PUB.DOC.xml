@@ -30,7 +30,8 @@ It offers teams the flexibility to create the network solutions they need while 
 -Private key File                              Specify path to the private key file. Required if password is not provided e.g /home/automic/.ssh/id_rsa.ppk
 -Passphrase                                    Provide passphrase for the private key. 
 -Strict Host Key Check                         If Yes, a strict host key check will be performed.
--Connection TimeOut                            Specify connection timeout . Zero means no timeout
+-Connection TimeOut                            Specify connection timeout . Zero means no timeout.
+-Timeout                                       Specify command timeout in seconds. Zero means no timeout.
 -Allocate TTy                                  Specify whether if TTY allocation should be done or not.
 -Options                                       Run using Sudo password.
 -Sudo password                                 The password for the Sudo command
@@ -38,14 +39,20 @@ It offers teams the flexibility to create the network solutions they need while 
 =Actions=
 Following actions are supported.
 
+* Action Name: PCK.AUTOMIC_SONIC.PUB.ACTION.ADD_MEMBER_PORT_TO_VLAN
+* Action Description: This Action will add member port to existing VLAN.
+
 * Action Name: PCK.AUTOMIC_SONIC.PUB.ACTION.ADD_VLAN
-* Action Description:  This action will Add a VLAN on sonic
+* Action Description:  This action will Add a VLAN on sonic.
 
 * Action Name: PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_MEMBER_PORT_FROM_VLAN
 * Action Description:  This action will Delete a member port from VLAN on sonic.
 
 * Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_VLAN
 * Action Description: This action will Delete a VLAN on sonic.
+
+* Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.RUN_SONIC_COMMAND
+* Action Description: This action will execute a command on target sonic system.
 
 * Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_INTERFACES
 * Action Description: This Action will be used to execute show interfaces command.
@@ -54,7 +61,7 @@ Following actions are supported.
 * Action Description: This action will execute a command on target sonic system.
 
 * Action Name: PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_SESSION
-* Action Description:  This Action listsessions which are being used at the moment.
+* Action Description:  This Action list sessions which are being used at the moment.
 
 * Action Name: PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_ARP_TABLE
 * Action Description:  This action displays an ARP table.

@@ -22,9 +22,6 @@ Add Member Port to VLAN while untagged is set as False
 Add Member Port to VLAN with invalid vlan id i.e. non integer
                       NOK       Invalid           ${Member_Name}    True
 
-Add Member Port to VLAN with invalid Member Name i.e. non integer
-                      NOK       ${VLAN_ID}        Invalid           False
-
 *** Keywords ***
 Startup
     Log    *******Start Test "ADD MEMBER PORT TO VLAN"*******

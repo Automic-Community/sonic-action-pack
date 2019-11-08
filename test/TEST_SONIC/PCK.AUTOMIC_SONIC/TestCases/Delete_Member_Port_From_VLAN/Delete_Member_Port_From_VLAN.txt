@@ -19,9 +19,6 @@ Delete Member Port from VLAN
 Delete Member Port from VLAN with invalid vlan id i.e. non integer
                       NOK       Invalid           ${Member_Name}
 
-Delete Member Port from VLAN with invalid Member Name i.e. non integer
-                      NOK       ${VLAN_ID}        Invalid
-
 *** Keywords ***
 Startup
     Log    *******Start Test "DELETE MEMBER PORT FROM VLAN"*******
@@ -39,8 +36,8 @@ Delete Member Port from VLAN Template
     Connect using SSH
     Run Keyword If    '${VLANID}' == 'Invalid'    Action Set    &UC4RB_SONIC_VLAN_ID#    ${Generated_Name}    ELSE    Action Set
     ...    &UC4RB_SONIC_VLAN_ID#    ${VLANID}
-    Run Keyword If    '${MemberName}' == 'Invalid'    Action Set    &UC4B_SONIC_MEMBER_PORT#    ${Generated_Name}    ELSE    Action Set
-    ...    &UC4B_SONIC_MEMBER_PORT#    ${MemberName}
+    Run Keyword If    '${MemberName}' == 'Invalid'    Action Set    &UC4RB_SONIC_MEMBER_PORT#    ${Generated_Name}    ELSE    Action Set
+    ...    &UC4RB_SONIC_MEMBER_PORT#    ${MemberName}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
 

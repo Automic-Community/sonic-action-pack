@@ -14,7 +14,7 @@ Resource          ../../Resources/actions.txt
 *** Test Cases ***    OK_NOK    VLANID
 Add VLAN with non existing vlan id
                       [Tags]    main_scenarios
-                      OK        ${VLAN_ID}
+                      OK        104
 
 Add VLAN with invalid vlan id
                       NOK       Invalid
@@ -33,7 +33,7 @@ Add VLAN Template
     Generate String
     Init Action    ${ADD_VLAN_ACTION}
     Connect using SSH
-    Run Keyword If    '${VLANID}' == 'Invalid'    Action Set    &UC4RB_SONIC_VLAN_ID#    ${Generated_Name}_${Time}    ELSE    Action Set
+    Run Keyword If    '${VLANID}' == 'Invalid'    Action Set    &UC4RB_SONIC_VLAN_ID#    ${Generated_Name}    ELSE    Action Set
     ...    &UC4RB_SONIC_VLAN_ID#    ${VLANID}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure

@@ -125,6 +125,7 @@
 :INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.ATTACH_RESOURCE
 
 : INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.LOGGING_SSH_PARAM
 ! Status messages
 : SET &UC4RB_LOGGING_INFO# = "******** RUN SONIC COMMAND ACTION EXECUTED  ********"
 : SET &UC4RB_LOGGING_ERROR# = "******** RUN SONIC COMMAND ACTION FAILED ********"
@@ -146,11 +147,13 @@
       }
 
 !!------------------------------------------ ERROR HANDLING ----------------------------------------------------
-: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_ERRORSTATUS]]></MSCRI>
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_JOBSTATUS@WIN]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
-<filterobjects/>
+<filterobjects>
+<row Icon="FILTER" condition="true" execute="" filter="PCK.AUTOMIC_SONIC.PRV.FILTER.SSH_ERROR" lnr="1" return="9" statustext=""/>
+</filterobjects>
 <HostFsc/>
 <LoginFsc/>
 </OUTPUTSCAN>
@@ -169,7 +172,7 @@
 
 :       IF &FLAG# EQ 0
 :         SET &FLAG# = STR_FIND(&VALUE#, "OUTPUT:")
-:         SET &VALUE# = STR_SUBSTITUTE(&VALUE#, "OUTPUT:", "")
+:         SET &VALUE# = STR_SUBSTITUTE(&VALUE#, "OUTPUT:", " ")
 :       ENDIF
 
 :       IF &FLAG# NE 0
@@ -179,9 +182,10 @@
 
 :   ENDPROCESS
 :   CLOSE_PROCESS &HND#
-
 : ENDIF
 : PUBLISH &UC4RB_SONIC_OUTPUT#,,WORKFLOW
+
+
 ]]></OSCRI>
 </POST_SCRIPT>
 <DOCU_Docu state="1" type="text">
