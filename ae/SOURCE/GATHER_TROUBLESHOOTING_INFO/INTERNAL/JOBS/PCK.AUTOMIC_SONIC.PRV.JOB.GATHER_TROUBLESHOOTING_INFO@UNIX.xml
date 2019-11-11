@@ -165,7 +165,7 @@
 </OUTPUTSCAN>
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
 <OSCRI><![CDATA[: SET &STATUS# = GET_UC_OBJECT_STATUS(,,"RETCODE")
-: IF &STATUS# EQ 0
+: IF &STATUS# NE 0
 :    SET &UC4RB_SONIC_OUTPUT_FILE# = ""
 : ENDIF
 ]]></OSCRI>
