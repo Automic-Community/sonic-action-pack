@@ -17,8 +17,7 @@ Gather Troubleshooting Info while Target File is Empty
                       OK        ${EMPTY}
 
 Gather Troubleshooting Info while Target File is Provided
-                      [Tags]    main_scenarios
-                      OK        ${EXECDIR}
+                      OK        ${Target_File}
 
 Gather Troubleshooting Info while invalid Target File is provided
                       NOK       Invalid
@@ -37,11 +36,11 @@ Gather Troubleshooting Info Template
     Generate String
     Init Action    ${GATHER_TROUBLESHOOTING_INFO_ACTION}
     Connect using SSH
-    Run Keyword If    '${TargetFile}' == 'Invalid'    Action Set    &UC4RB_SONIC_TARGET_FILE#    ${Generated_Name}    ELSE    Action Set
+    Run Keyword If    '${TargetFile}' == 'Invalid'    Action Set    &UC4RB_SONIC_TARGET_FILE#    ${Generated_Name}_${Time}    ELSE    Action Set
     ...    &UC4RB_SONIC_TARGET_FILE#    ${TargetFile}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
-    Run Keyword If    '${OK_NOK}' == 'OK'    Action Variable Should Be Found    &UC4RB_SONIC_OUTPUT_FILE#    ELSE    Action Variable Should Not Be Found    &UC4RB_SONIC_OUTPUT_FILE#
+    Run Keyword If    '${OK_NOK}' == 'OK'    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT_FILE#    ELSE    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT_FILE#
 
 Teardown
     Log    *******End Test "GATHER TROUBLESHOOTING INFO"*******

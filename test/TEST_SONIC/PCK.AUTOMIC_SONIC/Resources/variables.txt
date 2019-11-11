@@ -16,3 +16,5 @@ ${Command}        show clock
 #----Add/Delete Member Port--------------------------------------------------------------------------------
 ${Member_Name}    test
 ${VLAN_ID_2}      101
+#-----Gather Troubleshoot Info-----------------------------------------------------------------------------
+${Target_File}    E:\\Troubleshoot_logs\\log_01.txt
