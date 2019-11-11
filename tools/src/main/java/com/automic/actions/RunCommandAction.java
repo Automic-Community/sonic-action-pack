@@ -1,9 +1,9 @@
 package com.automic.actions;
 
 import com.automic.exception.AutomicException;
+import com.automic.util.CommonUtil;
 import com.automic.util.ConsoleWriter;
 import com.automic.util.SSHConnectionProperties;
-import com.automic.util.SSHTaskTimeoutException;
 
 /**
  * This action is used to Run Command in {@SSH}.
@@ -11,18 +11,27 @@ import com.automic.util.SSHTaskTimeoutException;
  */
 public class RunCommandAction extends AbstractSSHAction {
 
-	protected static final int DEFAULT_MAX_OUTPUT_SIZE = 64;
+	protected static final int DEFAULT_MAX_OUTPUT_SIZE = 128;
+	protected String standardOutputFilePath = null;
 
 	public RunCommandAction() {
-		addOption("command", false, "Single Command To Execute");
+		addOption("command", true, "Single Command To Execute");
+		addOption("outfile", false, "Output File Path");
+		addOption("flag", false, "Flag");
 	}
 
 	@Override
 	protected void executeSpecific() throws AutomicException {
 
 		String command=getOptionValue("command");
+		String outputFile = getOptionValue("outfile");
+		boolean flag = CommonUtil.convert2Bool(getOptionValue("flag"));
+		if (CommonUtil.checkNotEmpty(outputFile)) {
+			standardOutputFilePath = outputFile;
+		}
 
-		int returnCode = runCommand(command);
+
+		int returnCode = runCommand(command,flag);
 		
 			String status = "SUCCESSFUL";
 			if (returnCode != 0)
@@ -32,7 +41,7 @@ public class RunCommandAction extends AbstractSSHAction {
 	}
 
 	
-	public int runCommand(String command) throws AutomicException {
+	public int runCommand(String command, boolean flag) throws AutomicException {
 
 		int outputMaxSize = DEFAULT_MAX_OUTPUT_SIZE * 1024;
 		final StringBuilder stdOut = new StringBuilder();
@@ -42,22 +51,21 @@ public class RunCommandAction extends AbstractSSHAction {
 		try {
 			final SSHConnectionProperties connectionProperties = createConnectionProperties();
 
-			returnValue =executeSSHCommand(connectionProperties, command, stdOut, errOut, outputMaxSize);
-			
+			returnValue =executeSSHCommand(connectionProperties, command, stdOut, errOut, outputMaxSize, standardOutputFilePath);
+			if(!flag) {
 				if (errOut.toString().trim().length() != 0)
 					ConsoleWriter.writeln("ERROR: " + errOut.toString());
 				if (stdOut.toString().trim().length() != 0)
 					ConsoleWriter.writeln("OUTPUT: " + stdOut.toString());
-			
+			}
 			stdOut.setLength(0);
 			errOut.setLength(0);
+			
 
-		} catch (final SSHTaskTimeoutException e) {
-			throw new AutomicException("Command Execution Failed");
 		} catch (final AutomicException e) {
+			ConsoleWriter.writeln(e);
 			throw new AutomicException("Command Execution Failed");
-		}
-
+		} 
 		return returnValue;
 	}
 }

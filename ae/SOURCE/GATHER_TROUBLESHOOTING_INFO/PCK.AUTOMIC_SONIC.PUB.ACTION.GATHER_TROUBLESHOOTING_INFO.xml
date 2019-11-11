@@ -406,16 +406,14 @@
 PCK.AUTOMIC_SONIC.PUB.ACTION.GATHER_TROUBLESHOOTING_INFO
 
 = General description =
-This action will Gather Troublshooting Info.
-
-=Setup= 
-* For SSH, Enable SSH on the target system.
+This action will Gather Troubleshooting Info.
 
 = Inputs =
 * Target File : Provide file name with full path to save gathered troubleshooting information.
 
 =Return Value=
-(none)
+UC4RB_SONIC_OUTPUT_FILE# : Troubleshoot Log File Path
+
 = Logging =
 Logs will be displayed in the AE report.]]></DOC>
 </DOCU_Docu>
