@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBS_WINDOWS AttrType="WINDOWS" name="PCK.AUTOMIC_SONIC.PRV.JOB.RUN_SONIC_COMMAND@WINDOWS">
+<JOBS_WINDOWS AttrType="WINDOWS" name="PCK.AUTOMIC_SONIC.PRV.JOB.SHOW_RUNNING_CONFIGURATION@WINDOWS">
 <XHEADER state="1">
-<Title/>
+<Title>Show Running Configuration</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -25,12 +25,12 @@
 <ExtRepDef>1</ExtRepDef>
 <ExtRepAll>0</ExtRepAll>
 <ExtRepNone>0</ExtRepNone>
-<AutoDeactNo>1</AutoDeactNo>
+<AutoDeactNo>0</AutoDeactNo>
 <AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
 <AutoDeactErrorFree>0</AutoDeactErrorFree>
 <DeactWhen/>
 <DeactDelay>0</DeactDelay>
-<AutoDeactAlways>0</AutoDeactAlways>
+<AutoDeactAlways>1</AutoDeactAlways>
 <AttDialog>0</AttDialog>
 <ActAtRun>1</ActAtRun>
 <Consumption>0</Consumption>
@@ -116,38 +116,42 @@
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
 <MSCRI><![CDATA[$errors = 0
-
 : INC PCK.ITPA_SHARED.PUB.INCLUDE.POWERSHELL_UTILITY
 !-----------Building command arguments-------------
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.HEADER.EXECUTION
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.LOGGING_SSH_PARAM
+: SET &UC4RB_LOGGING_PARAMETER# = "Configuration Detail "
+: SET &UC4RB_LOGGING_PARAMETER_VAL# = "&UC4RB_SONIC_CONFIG_DETAIL#"
+: INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.PARAM
+: INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN
+! Status messages
+: SET &UC4RB_LOGGING_INFO# = "******** SHOW RUNNING CONFIGURATION ACTION EXECUTED  ********"
+: SET &UC4RB_LOGGING_ERROR# = "******** SHOW RUNNING CONFIGURATION ACTION FAILED ********"
 
 :INC PCK.ITPA_SHARED.PUB.INCLUDE.ATTACH
-:INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.ATTACH_RESOURCE
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.ATTACH_RESOURCE
 
-: INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN
-: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.LOGGING_SSH_PARAM
-! Status messages
-: SET &UC4RB_LOGGING_INFO# = "******** RUN SONIC COMMAND ACTION EXECUTED  ********"
-: SET &UC4RB_LOGGING_ERROR# = "******** RUN SONIC COMMAND ACTION FAILED ********"
-
-: SET &UC4RB_LOGGING_PARAMETER# = "RUN SONIC COMMAND"
-: SET &UC4RB_LOGGING_PARAMETER_VAL# = "&UC4RB_SONIC_COMMAND#"
-: INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.PARAM
-
-!   Execute Command
-:   SET &UC4RB_SSH_COMMAND# = &UC4RB_SONIC_COMMAND#
-
-! flag true includes output in job report
-:   SET &FLAG# = "true"
-:INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.SSH_RUN_COMMAND@WIN
-
-
+: SET &UC4RB_SONIC_SHOW_DETAIL_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_DETAIL_CMD#, "show runningconfiguration ")
+: SWITCH &UC4RB_SONIC_CONFIG_DETAIL#
+:   CASE "BGP"
+:     SET &UC4RB_SONIC_SHOW_DETAIL_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_DETAIL_CMD#, "bgp ")
+:   CASE "Interfaces"
+:     SET &UC4RB_SONIC_SHOW_DETAIL_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_DETAIL_CMD#, "interfaces ")
+:   CASE "SNMP"
+:     SET &UC4RB_SONIC_SHOW_DETAIL_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_DETAIL_CMD#, "snmp ")
+:   CASE "NTP"
+:     SET &UC4RB_SONIC_SHOW_DETAIL_CMD# = STR_CAT(&UC4RB_SONIC_SHOW_DETAIL_CMD#, "ntp ")
+: ENDSWITCH
+: P "Command Executed: &UC4RB_SONIC_SHOW_DETAIL_CMD#"
+: SET &UC4RB_SSH_COMMAND# = &UC4RB_SONIC_SHOW_DETAIL_CMD#
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.SSH_RUN_COMMAND@WIN
  if(!$?) {
-        $errors = 1
-      }
+           $errors = 1
+         }
+!------------------------------------------ ERROR HANDLING ----------------------------------------------------
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_JOBSTATUS@WIN
 
-!!------------------------------------------ ERROR HANDLING ----------------------------------------------------
-: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_JOBSTATUS@WIN]]></MSCRI>
+]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
@@ -158,35 +162,7 @@
 <LoginFsc/>
 </OUTPUTSCAN>
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
-<OSCRI><![CDATA[: SET &STATUS# = GET_UC_OBJECT_STATUS(,,"RETCODE")
-: SET &UC4RB_SONIC_OUTPUT# = ""
-: IF &STATUS# EQ 0
-:   SET &NL# = UC_CRLF()
-:   SET &FLAG# = 0
-:   SET &HND#=PREP_PROCESS_REPORT("JOBS", , "REP",)
-:   PROCESS &HND#
-:     SET &VALUE# = GET_PROCESS_LINE(&HND#)
-:       IF &VALUE# EQ "UC4RB_SSH_COMMAND_STATUS::=SUCCESSFUL"
-:        TERM_PROCESS
-:       ENDIF
-
-:       IF &FLAG# EQ 0
-:         SET &FLAG# = STR_FIND(&VALUE#, "OUTPUT:")
-:         SET &VALUE# = STR_SUBSTITUTE(&VALUE#, "OUTPUT:", " ")
-:       ENDIF
-
-:       IF &FLAG# NE 0
-:         SET &UC4RB_SONIC_OUTPUT# = STR_CAT(&UC4RB_SONIC_OUTPUT#, &VALUE#)
-:         SET &UC4RB_SONIC_OUTPUT# = STR_CAT(&UC4RB_SONIC_OUTPUT#, &NL#)
-:       ENDIF
-
-:   ENDPROCESS
-:   CLOSE_PROCESS &HND#
-: ENDIF
-: PUBLISH &UC4RB_SONIC_OUTPUT#,,WORKFLOW
-
-
-]]></OSCRI>
+<OSCRI/>
 </POST_SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC/>
