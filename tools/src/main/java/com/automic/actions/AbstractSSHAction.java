@@ -209,6 +209,9 @@ public abstract class AbstractSSHAction extends AbstractAction {
 
 			if (CommonUtil.checkNotEmpty(stdOutFilePath)) {
 				File file = new File(stdOutFilePath);
+				if (!file.isAbsolute()) {
+					throw new AutomicException("Please provide an absolute file path");
+				}
 				file.createNewFile();
 			}
 			final Future<String> futureOut = executorOut
