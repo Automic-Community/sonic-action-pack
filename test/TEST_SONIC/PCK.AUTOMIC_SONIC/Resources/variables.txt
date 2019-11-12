@@ -4,8 +4,8 @@ Resource          ../../../Env/default.txt
 *** Variables ***
 #----Global-------------------------------------------------------------------------------------
 ${SSH_HOST}       10.108.48.139
-${SSH_PORT}       3040
-${SSH_USERNAME}    sonic
+${SSH_PORT}       3041
+${SSH_USERNAME}    root
 ${SSH_PASSWORD}    sonic
 ${SSH_KEY}        ${EMPTY}
 ${SSH_PASSPHRASE}    ${EMPTY}
@@ -16,3 +16,5 @@ ${Command}        show clock
 #----Add/Delete Member Port--------------------------------------------------------------------------------
 ${Member_Name}    test
 ${VLAN_ID_2}      101
+#-----Save Configuration to file-------------------------------------------------------------------------
+${Target_File}    /etc/sonic/config2.json
