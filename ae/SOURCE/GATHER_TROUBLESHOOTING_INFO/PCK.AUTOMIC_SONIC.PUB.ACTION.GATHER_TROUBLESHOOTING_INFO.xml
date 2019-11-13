@@ -409,10 +409,13 @@ PCK.AUTOMIC_SONIC.PUB.ACTION.GATHER_TROUBLESHOOTING_INFO
 This action will Gather Troubleshooting Info.
 
 = Inputs =
-* Target File : Provide file name with full path to save gathered troubleshooting information.
+- Target File : Provide file name with full path to save gathered troubleshooting information.
 
-=Return Value=
-UC4RB_SONIC_OUTPUT_FILE# : Troubleshoot Log File Path
+= Failure Condition =
+If the user provide invalid Target File Path.
+
+= Return Value =
+UC4RB_SONIC_OUTPUT_FILE# : Troubleshoot Log File Path.
 
 = Logging =
 Logs will be displayed in the AE report.]]></DOC>
