@@ -33,6 +33,8 @@
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_MEMBER_PORT_FROM_VLAN/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_VLAN/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_VLAN/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.GATHER_TROUBLESHOOTING_INFO/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.GATHER_TROUBLESHOOTING_INFO/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.RUN_SONIC_COMMAND/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.RUN_SONIC_COMMAND/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
 <row Name="PCK.AUTOMIC_SONIC.PUB.ACTION.SAVE_CONFIGURATION_TO_FILE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
