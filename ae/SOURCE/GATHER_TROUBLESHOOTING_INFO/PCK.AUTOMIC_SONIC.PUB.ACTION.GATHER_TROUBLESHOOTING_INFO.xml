@@ -414,6 +414,9 @@ This action will Gather Troubleshooting Info.
 = Failure Condition =
 If the user provide invalid Target File Path.
 
+= behavior =
+If the user doesn't provide the Target File Path then it will be saved in agent bin directory. Eg. C:\Automic\Automation.Platform\Agents\windows\bin
+
 = Return Value =
 UC4RB_SONIC_OUTPUT_FILE# : Troubleshoot Log File Path.
 
