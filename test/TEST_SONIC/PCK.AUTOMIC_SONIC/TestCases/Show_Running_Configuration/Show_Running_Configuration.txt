@@ -41,6 +41,7 @@ Show Running Configuration Template
     Action Set    &UC4RB_SONIC_CONFIG_DETAIL#    ${ConfigurationDetail}
     Action Execute
     Assert Success
+    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT#
 
 Teardown
     Log    *******End Test "SHOW RUNNING CONFIGURATION"*******

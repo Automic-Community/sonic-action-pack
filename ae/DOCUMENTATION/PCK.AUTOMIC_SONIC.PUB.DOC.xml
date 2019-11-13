@@ -73,7 +73,10 @@ Following actions are supported.
 * Action Description: This action displays the running configuration details.
 
 * Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_SYSTEM_MEMORY
-* Action Description: This action displays the system memory.]]></DOC>
+* Action Description: This action displays the system memory.
+
+* Action name: PCK.AUTOMIC_SONIC.PRV.JOB.SAVE_CONFIGURATION_TO_FILE
+* Action Description: This action will save the configuration to a file ]]></DOC>
 
 </DOCU_Docu>
 </DOCU>
