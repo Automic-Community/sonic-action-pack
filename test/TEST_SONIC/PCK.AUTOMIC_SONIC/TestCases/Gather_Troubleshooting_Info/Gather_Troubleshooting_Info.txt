@@ -40,7 +40,7 @@ Gather Troubleshooting Info Template
     ...    &UC4RB_SONIC_TARGET_FILE#    ${TargetFile}
     Action Execute
     Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
-    Run Keyword If    '${OK_NOK}' == 'OK'    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT_FILE#    ELSE    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT_FILE#
+    Run Keyword If    '${OK_NOK}' == 'OK'    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT_FILE#    ELSE    Action Object Variable Should Not Be Found    &UC4RB_SONIC_OUTPUT_FILE#
 
 Teardown
     Log    *******End Test "GATHER TROUBLESHOOTING INFO"*******
