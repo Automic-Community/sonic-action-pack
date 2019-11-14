@@ -403,6 +403,15 @@ This action loads the configuration from a json file.
 = Failure Conditions =
 If the user does not provide sudo credentials properly.
 
+= Behaviour =
+This action is used to load the configuration from a JSON file like the file which SONiC saves its configuration to,/etc/sonic/config_db.json
+This action loads the configuration from the input file (if user specifies this optional filename, it will use that input file. 
+Otherwise, it will use the default/etc/sonic/config_db.jsonfile as the input file) into CONFIG_DB. 
+The configuration present in the input file is applied on top of the already running configuration.
+This action does not flush the config DB before loading the new configuration (i.e., If the configuration present in the input file is same as the current running configuration, 
+nothing happens) If the config present in the input file is not present in running configuration, it will be added. 
+If the config present in the input file differs (when key matches) from that of the running configuration, it will be modified as per the new values for those keys.
+
 =Return Value=
 (none)
 

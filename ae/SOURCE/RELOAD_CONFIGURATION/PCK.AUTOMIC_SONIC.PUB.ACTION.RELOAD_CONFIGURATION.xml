@@ -399,10 +399,14 @@ This action reloads the configuration from a JSON file.
 
 
 = Inputs =
-- Configuration File:              Provide configuration file name with full path to load if reload should be done from file. E.g.:/etc/sonic/config2.json
+- Configuration File:              Provide configuration file name with full path to load if reload should be done from file. E.g.: /etc/sonic/config2.json
 
 = Failure Conditions =
 If the user does not provide sudo credentials properly.
+
+= Behaviour =
+This action is used to clear current configuration and import new configurationn from the input file or from /etc/sonic/config_db.json. 
+This action shall stop all services before clearing the configuration and it then restarts those services.
 
 =Return Value=
 (none)
