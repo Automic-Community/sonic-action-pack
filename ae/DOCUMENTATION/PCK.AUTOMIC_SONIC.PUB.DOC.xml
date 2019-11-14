@@ -76,8 +76,15 @@ Following actions are supported.
 * Action Description: This action displays the system memory.
 
 * Action name: PCK.AUTOMIC_SONIC.PRV.JOB.SAVE_CONFIGURATION_TO_FILE
-* Action Description: This action will save the configuration to a file ]]></DOC>
+* Action Description: This action will save the configuration to a file 
 
+* Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.LOAD_CONFIGURATION_FROM_JSON_FILE
+* Action Description: This action loads the configuration from a json file.
+
+* Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.RELOAD_CONFIGURATION
+* Action Description: This action reloads the configuration from a JSON file.
+
+]]></DOC>
 </DOCU_Docu>
 </DOCU>
 </uc-export>
