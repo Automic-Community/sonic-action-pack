@@ -53,28 +53,28 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
-<UC4RB_SONIC_CONFIG_FILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
-<UC4RB_SSH_CONN_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_CONN_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_CONN_TIMEOUTs.00>
-<UC4RB_SSH_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
-<UC4RB_SSH_HOST_KEY_CHECKs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST_KEY_CHECK#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_HOST_KEY_CHECKs.00>
-<UC4RB_SSH_KEYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_KEY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
-<UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_CONN_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_CONN_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_CONN_TIMEOUTs.00>
+<UC4RB_SSH_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_HOST_KEY_CHECKs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST_KEY_CHECK#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_HOST_KEY_CHECKs.00>
+<UC4RB_SSH_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_KEY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SSH_PASSWORDs.00>
-<UC4RB_SSH_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
-<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
-<UC4RB_SSH_TTYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
-<UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
+<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
+<UC4RB_SSH_TTYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
+<UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
-<UC4RB_USE_SSH_SUDOs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SSH_SUDO#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">None</UC4RB_USE_SSH_SUDOs.00>
+<UC4RB_USE_SSH_SUDOs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SSH_SUDO#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">None</UC4RB_USE_SSH_SUDOs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<UC4RB_SONIC_CONFIG_FILEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -82,8 +82,8 @@
 <PROMPTSET name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
 <UC4RB_SUDO_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_PASSWORD#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">--10</UC4RB_SUDO_PASSWORDs.00>
-<UC4RB_SUDO_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_USER#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO"/>
-<UC4RB_USE_SUDOs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SUDO#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">None</UC4RB_USE_SUDOs.00>
+<UC4RB_SUDO_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_USER#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO"/>
+<UC4RB_USE_SUDOs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SUDO#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">None</UC4RB_USE_SUDOs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -135,28 +135,28 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
-<UC4RB_SONIC_CONFIG_FILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
-<UC4RB_SSH_CONN_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_CONN_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_CONN_TIMEOUTs.00>
-<UC4RB_SSH_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
-<UC4RB_SSH_HOST_KEY_CHECKs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST_KEY_CHECK#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_HOST_KEY_CHECKs.00>
-<UC4RB_SSH_KEYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_KEY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
-<UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_CONN_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_CONN_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_CONN_TIMEOUTs.00>
+<UC4RB_SSH_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_HOST_KEY_CHECKs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST_KEY_CHECK#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_HOST_KEY_CHECKs.00>
+<UC4RB_SSH_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_KEY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SSH_PASSWORDs.00>
-<UC4RB_SSH_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
-<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
-<UC4RB_SSH_TTYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
-<UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
+<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
+<UC4RB_SSH_TTYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
+<UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
-<UC4RB_USE_SSH_SUDOs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SSH_SUDO#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">None</UC4RB_USE_SSH_SUDOs.00>
+<UC4RB_USE_SSH_SUDOs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SSH_SUDO#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">None</UC4RB_USE_SSH_SUDOs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<UC4RB_SONIC_CONFIG_FILEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -164,8 +164,8 @@
 <PROMPTSET name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
 <UC4RB_SUDO_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_PASSWORD#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">--10</UC4RB_SUDO_PASSWORDs.00>
-<UC4RB_SUDO_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_USER#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO"/>
-<UC4RB_USE_SUDOs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SUDO#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">None</UC4RB_USE_SUDOs.00>
+<UC4RB_SUDO_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_USER#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO"/>
+<UC4RB_USE_SUDOs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SUDO#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">None</UC4RB_USE_SUDOs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -217,28 +217,28 @@
 </node>
 <node content="1" id="PRPTS" name="PromptSets" parent="" pref="1" type="PROMPTSET"/>
 <node content="0" id="PPRPTS" name="Parent PromptSets" parent="" type="PPROMPTSET"/>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
-<UC4RB_SONIC_CONFIG_FILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
-<UC4RB_SSH_CONN_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_CONN_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_CONN_TIMEOUTs.00>
-<UC4RB_SSH_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
-<UC4RB_SSH_HOST_KEY_CHECKs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST_KEY_CHECK#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_HOST_KEY_CHECKs.00>
-<UC4RB_SSH_KEYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_KEY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
-<UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_CONN_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_CONN_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_CONN_TIMEOUTs.00>
+<UC4RB_SSH_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_HOST_KEY_CHECKs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST_KEY_CHECK#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_HOST_KEY_CHECKs.00>
+<UC4RB_SSH_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_KEY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SSH_PASSWORDs.00>
-<UC4RB_SSH_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
-<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
-<UC4RB_SSH_TTYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
-<UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
+<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
+<UC4RB_SSH_TTYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
+<UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
-<UC4RB_USE_SSH_SUDOs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SSH_SUDO#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">None</UC4RB_USE_SSH_SUDOs.00>
+<UC4RB_USE_SSH_SUDOs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SSH_SUDO#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">None</UC4RB_USE_SSH_SUDOs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<UC4RB_SONIC_CONFIG_FILEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -246,8 +246,8 @@
 <PROMPTSET name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
 <UC4RB_SUDO_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_PASSWORD#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">--10</UC4RB_SUDO_PASSWORDs.00>
-<UC4RB_SUDO_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_USER#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO"/>
-<UC4RB_USE_SUDOs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SUDO#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">None</UC4RB_USE_SUDOs.00>
+<UC4RB_SUDO_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_USER#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO"/>
+<UC4RB_USE_SUDOs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SUDO#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">None</UC4RB_USE_SUDOs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -286,28 +286,28 @@
 <result ChkRExec="0" RElseHalt="0" RElseIgn="0" RElseJPAbend="0" RExecFlag="0" RExecute="" RRepMTimes="0" RRepOn="0" RRepWait="0" RWhen=""/>
 <dynvalues>
 <dyntree>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
-<UC4RB_SONIC_CONFIG_FILEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION"/>
-</PRPTBOX>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PPRPTS" type="PPROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">
-<UC4RB_SSH_CONN_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_CONN_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_CONN_TIMEOUTs.00>
-<UC4RB_SSH_HOSTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
-<UC4RB_SSH_HOST_KEY_CHECKs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST_KEY_CHECK#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_HOST_KEY_CHECKs.00>
-<UC4RB_SSH_KEYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_KEY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
-<UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_CONN_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_CONN_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_CONN_TIMEOUTs.00>
+<UC4RB_SSH_HOSTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_HOST_KEY_CHECKs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_HOST_KEY_CHECK#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_HOST_KEY_CHECKs.00>
+<UC4RB_SSH_KEYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_KEY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SSH_PASSWORDs.00>
-<UC4RB_SSH_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
-<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
-<UC4RB_SSH_TTYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
-<UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
+<UC4RB_SSH_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
+<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
+<UC4RB_SSH_TTYs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
+<UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
-<UC4RB_USE_SSH_SUDOs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SSH_SUDO#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">None</UC4RB_USE_SSH_SUDOs.00>
+<UC4RB_USE_SSH_SUDOs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SSH_SUDO#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">None</UC4RB_USE_SSH_SUDOs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<UC4RB_SONIC_CONFIG_FILEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -315,8 +315,8 @@
 <PROMPTSET name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">
 <UC4RB_SUDO_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_PASSWORD#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">--10</UC4RB_SUDO_PASSWORDs.00>
-<UC4RB_SUDO_USERs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_USER#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO"/>
-<UC4RB_USE_SUDOs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SUDO#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">None</UC4RB_USE_SUDOs.00>
+<UC4RB_SUDO_USERs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_USER#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO"/>
+<UC4RB_USE_SUDOs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_USE_SUDO#" promptsetname="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO">None</UC4RB_USE_SUDOs.00>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -383,16 +383,28 @@
 <Mode>1</Mode>
 </VALUE>
 </node>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" prptmode="1"/>
-</PROMPTSET>
-</node>
 <node content="1" id="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" parent="PRPTS" type="PROMPTSET">
 <PROMPTSET name="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" ontop="1">
 <PRPTBOX promptset="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS" prptmode="1">
+<UC4RB_SSH_HOSTs.00 altview="0" haslist="0"/>
+<UC4RB_SSH_PORTs.00 altview="0" haslist="0">22</UC4RB_SSH_PORTs.00>
+<UC4RB_SSH_USERNAMEs.00 altview="0" haslist="0"/>
 <UC4RB_SSH_PASSWORDs.00 altview="0" haslist="0">--10</UC4RB_SSH_PASSWORDs.00>
+<UC4RB_SSH_KEYs.00 altview="0" haslist="0"/>
+<UC4RB_SSH_PASSPHRASEs.00 altview="0" haslist="0"/>
+<UC4RB_SSH_HOST_KEY_CHECKs.00 altview="0" haslist="0">NO</UC4RB_SSH_HOST_KEY_CHECKs.00>
+<UC4RB_SSH_CONN_TIMEOUTs.00 altview="0" haslist="0">30</UC4RB_SSH_CONN_TIMEOUTs.00>
+<UC4RB_SSH_TIMEOUTs.00 altview="0" haslist="0">30</UC4RB_SSH_TIMEOUTs.00>
+<UC4RB_SSH_TTYs.00 altview="0" haslist="0">NO</UC4RB_SSH_TTYs.00>
+<UC4RB_USE_SSH_SUDOs.00 altview="0" haslist="0">None</UC4RB_USE_SSH_SUDOs.00>
 <UC4RB_SUDO_SSH_PASSWORDs.00 altview="0" haslist="0">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
+</PRPTBOX>
+</PROMPTSET>
+</node>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" prptmode="1">
+<UC4RB_SONIC_CONFIG_FILEs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -400,6 +412,8 @@
 <PROMPTSET name="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO" ontop="1">
 <PRPTBOX promptset="PCK.ITPA_SHARED.PUB.PROMPTSET.SUDO" prptmode="1">
 <UC4RB_SUDO_PASSWORDs.00 altview="0" haslist="0">--10</UC4RB_SUDO_PASSWORDs.00>
+<UC4RB_USE_SUDOs.00 altview="0" haslist="0">None</UC4RB_USE_SUDOs.00>
+<UC4RB_SUDO_USERs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -433,7 +447,29 @@
 <MSCRI/>
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
-<DOC/>
+<DOC><![CDATA[= Action name =
+PCK.AUTOMIC_SONIC.PUB.ACTION.LOAD_MANAGEMENT_CONFIGURATION
+
+= General description =
+This action will Load Management Configuration from a given file. So that users can apply already prepared configuration to the environment.
+
+
+= Inputs =
+- Management Configuration File*     :                 Provide management configuration file name with full path to load. E.g. /etc/sonic/config2.json
+
+= Failure Conditions =
+If the user provides invalid or not existing file.
+If the user will not provide Sudo credentials properly.
+
+= Behaviour =
+(none)
+
+=Return Value=
+(none)
+
+= Example =
+* Management Configuration File           : /etc/sonic/config2.json
+----------------------------------------------]]></DOC>
 </DOCU_Docu>
 </JOBP>
 </uc-export>

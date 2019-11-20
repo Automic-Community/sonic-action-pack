@@ -27,10 +27,10 @@
 <ExtRepNone>0</ExtRepNone>
 <AutoDeactNo>0</AutoDeactNo>
 <AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
-<AutoDeactErrorFree>0</AutoDeactErrorFree>
-<DeactWhen/>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
 <DeactDelay>0</DeactDelay>
-<AutoDeactAlways>1</AutoDeactAlways>
+<AutoDeactAlways>0</AutoDeactAlways>
 <AttDialog>0</AttDialog>
 <ActAtRun>1</ActAtRun>
 <Consumption>0</Consumption>
