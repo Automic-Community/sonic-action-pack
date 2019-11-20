@@ -56,6 +56,13 @@ Following actions are supported.
 
 * Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_INTERFACES
 * Action Description: This Action will be used to execute show interfaces command.
+
+* Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.LOAD_CONFIGURATION_FROM_MINIGRAPH_FILE
+* Action Description: This action will Load Configuration from a given MiniGraph file.
+
+* Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.LOAD_MANAGEMENT_CONFIGURATION
+* Action Description: This action will Load Management Configuration from a given file.
+
 ]]></DOC>
 </DOCU_Docu>
 </DOCU>

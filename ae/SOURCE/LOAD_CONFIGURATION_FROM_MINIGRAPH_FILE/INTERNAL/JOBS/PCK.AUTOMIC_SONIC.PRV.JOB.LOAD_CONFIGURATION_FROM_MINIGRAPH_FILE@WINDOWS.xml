@@ -25,10 +25,10 @@
 <ExtRepDef>1</ExtRepDef>
 <ExtRepAll>0</ExtRepAll>
 <ExtRepNone>0</ExtRepNone>
-<AutoDeactNo>1</AutoDeactNo>
+<AutoDeactNo>0</AutoDeactNo>
 <AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
-<AutoDeactErrorFree>0</AutoDeactErrorFree>
-<DeactWhen/>
+<AutoDeactErrorFree>1</AutoDeactErrorFree>
+<DeactWhen>ANY_OK</DeactWhen>
 <DeactDelay>0</DeactDelay>
 <AutoDeactAlways>0</AutoDeactAlways>
 <AttDialog>0</AttDialog>
@@ -115,7 +115,29 @@
 <PSCRI><![CDATA[:INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.PREPARE_JOB]]></PSCRI>
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
-<MSCRI/>
+<MSCRI><![CDATA[$errors = 0
+: INC PCK.ITPA_SHARED.PUB.INCLUDE.POWERSHELL_UTILITY
+!-----------Building command arguments-------------
+: INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.HEADER.EXECUTION
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.LOGGING_SSH_PARAM
+: SET &UC4RB_LOGGING_PARAMETER# = "Configuration Minigraph File"
+: SET &UC4RB_LOGGING_PARAMETER_VAL# = "&UC4RB_SONIC_MINIGR_CONFIG_FILE#"
+: INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.PARAM
+: INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN
+! Status messages
+: SET &UC4RB_LOGGING_INFO# = "******** LOAD CONFIGURATION FROM MINIGRAPH FILE ACTION EXECUTED  ********"
+: SET &UC4RB_LOGGING_ERROR# = "******** LOAD CONFIGURATION FROM MINIGRAPH FILE ACTION FAILED ********"
+
+:INC PCK.ITPA_SHARED.PUB.INCLUDE.ATTACH
+:INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.ATTACH_RESOURCE
+
+: SET &UC4RB_SSH_COMMAND# = " config load_minigraph -y &UC4RB_SONIC_MINIGR_CONFIG_FILE# "
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.SSH_RUN_COMMAND@WIN
+ if(!$?) {
+           $errors = 1
+         }
+!------------------------------------------ ERROR HANDLING ----------------------------------------------------
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_JOBSTATUS@WIN]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
