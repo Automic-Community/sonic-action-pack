@@ -18,3 +18,8 @@ ${Member_Name}    test
 ${VLAN_ID_2}      101
 #-----Load Management Configuration-------------------------------------------------------------------------
 ${Management_Config_File}    /etc/sonic/config_db.json
+#------Load/Reload Configuration----------------------------------------------------------------------------
+${Config_File}    /etc/sonic/config_db.json
+#-----Gather Troubleshoot Info/Save Configuration to file------------------------------------------------------------------------------
+${Target_File}    E:\\Troubleshoot_logs\\log_01.txt
+

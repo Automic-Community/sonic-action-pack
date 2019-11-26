@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBS_UNIX AttrType="UNIX" name="PCK.AUTOMIC_SONIC.PRV.JOB.SHOW_INTERFACES@UNIX">
+<JOBS_UNIX AttrType="UNIX" name="PCK.AUTOMIC_SONIC.PRV.JOB.SHOW_SYSTEM_MEMORY@UNIX">
 <XHEADER state="1">
-<Title>Show Interfaces</Title>
+<Title>Show System Memory</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -25,12 +25,12 @@
 <ExtRepDef>1</ExtRepDef>
 <ExtRepAll>0</ExtRepAll>
 <ExtRepNone>0</ExtRepNone>
-<AutoDeactNo>1</AutoDeactNo>
+<AutoDeactNo>0</AutoDeactNo>
 <AutoDeact1ErrorFree>0</AutoDeact1ErrorFree>
 <AutoDeactErrorFree>0</AutoDeactErrorFree>
 <DeactWhen/>
 <DeactDelay>0</DeactDelay>
-<AutoDeactAlways>0</AutoDeactAlways>
+<AutoDeactAlways>1</AutoDeactAlways>
 <AttDialog>0</AttDialog>
 <ActAtRun>1</ActAtRun>
 <Consumption>0</Consumption>
@@ -108,31 +108,29 @@
 </PRE_SCRIPT>
 <SCRIPT mode="1" state="1">
 <MSCRI><![CDATA[: DEFINE &STRING_ARR#, string, 30
+: INC PCK.ITPA_SHARED.PUB.INCLUDE.ATTACH
 : INC PCK.ITPA_SHARED.PUB.INCLUDE.SUDOERS_HEADER
 
 !-----------Building command arguments-------------
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.HEADER.EXECUTION
-: INC PCK.AUTOMIC_SONIC.PRV.INCLUDE.SHOW_INTERFACES_LOGGING_PARAMS
 : INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.LOGGING_SSH_PARAM
+: INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN
 ! Status messages
-: SET &UC4RB_LOGGING_INFO# = "******** SHOW INTERFACES EXECUTED  ********"
-: SET &UC4RB_LOGGING_ERROR# = "******** SHOW INTERFACES ACTION FAILED ********"
+: SET &UC4RB_LOGGING_INFO# = "******** SHOW SYSTEM MEMORY ACTION EXECUTED  ********"
+: SET &UC4RB_LOGGING_ERROR# = "******** SHOW SYSTEM MEMORY ACTION FAILED ********"
 
-:INC PCK.ITPA_SHARED.PUB.INCLUDE.ATTACH
-:INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.ATTACH_RESOURCE
-! Execute Command
-: INC PCK.AUTOMIC_SONIC.PRV.INCLUDE.SHOW_INTERFACES_EXECUTE_COMMAND
+: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.ATTACH_RESOURCE
+
+: SET &UC4RB_SSH_COMMAND# = "show system-memory"
 : INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.SSH_RUN_COMMAND@UNIX
 !------------------------------------------ ERROR HANDLING ----------------------------------------------------
-:INC PCK.AUTOMIC_AIOPS.PUB.INCLUDE.CHECK_JOBSTATUS@UNIX
-:INC PCK.ITPA_SHARED.PUB.INCLUDE.SUDOERS_FOOTER
-
-]]></MSCRI>
+: INC PCK.AUTOMIC_AIOPS.PUB.INCLUDE.CHECK_JOBSTATUS@UNIX
+: INC PCK.ITPA_SHARED.PUB.INCLUDE.SUDOERS_FOOTER]]></MSCRI>
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
 <filterobjects>
-<row Icon="FILTER" condition="true" execute="" filter="PCK.AUTOMIC_SONIC.PRV.FILTER.SHOW_INTERFACES" lnr="1" return="9" statustext=""/>
+<row Icon="FILTER" condition="true" execute="" filter="PCK.AUTOMIC_SONIC.PRV.FILTER.SSH_ERROR" lnr="1" return="9" statustext=""/>
 </filterobjects>
 <HostFsc/>
 <LoginFsc/>
@@ -140,30 +138,29 @@
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
 <OSCRI><![CDATA[: SET &STATUS# = GET_UC_OBJECT_STATUS(,,"RETCODE")
 : SET &UC4RB_SONIC_OUTPUT# = ""
-: SET &NL# = UC_CRLF()
 : IF &STATUS# EQ 0
+:   SET &NL# = UC_CRLF()
 :   SET &FLAG# = 0
-:   SET &FINDOUTPUT# = 0
 :   SET &HND#=PREP_PROCESS_REPORT("JOBS", , "REP",)
 :   PROCESS &HND#
 :     SET &VALUE# = GET_PROCESS_LINE(&HND#)
 :       IF &VALUE# EQ "UC4RB_SSH_COMMAND_STATUS::=SUCCESSFUL"
-:       TERM_PROCESS
+:        TERM_PROCESS
 :       ENDIF
+
 :       IF &FLAG# EQ 0
-:       SET &FLAG# = STR_FIND(&VALUE#, "Command:")
+:         SET &FLAG# = STR_FIND(&VALUE#, "OUTPUT:")
+:         SET &VALUE# = STR_SUBSTITUTE(&VALUE#, "OUTPUT:", "")
 :       ENDIF
+
 :       IF &FLAG# NE 0
-:         SET &FINDOUTPUT# = STR_FIND(&VALUE#, "OUTPUT:")
-:         IF &FINDOUTPUT# NE 0
-:         SET &VALUE# = STR_SUBSTITUTE (&VALUE#, &VALUE#, " ")
-:         ENDIF
 :         SET &UC4RB_SONIC_OUTPUT# = STR_CAT(&UC4RB_SONIC_OUTPUT#, &VALUE#)
 :         SET &UC4RB_SONIC_OUTPUT# = STR_CAT(&UC4RB_SONIC_OUTPUT#, &NL#)
-
 :       ENDIF
+
 :   ENDPROCESS
 :   CLOSE_PROCESS &HND#
+
 : ENDIF
 : PUBLISH &UC4RB_SONIC_OUTPUT#,,WORKFLOW]]></OSCRI>
 </POST_SCRIPT>

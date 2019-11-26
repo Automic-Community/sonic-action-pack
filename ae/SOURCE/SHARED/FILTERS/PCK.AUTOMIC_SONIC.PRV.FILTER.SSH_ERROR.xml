@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
 <FILTER_OUTPUT name="PCK.AUTOMIC_SONIC.PRV.FILTER.SSH_ERROR">
 <HEADER state="1">
-<Title>filter's the Output for ERROR keyword</Title>
+<Title>filter's the Output for FAILED keyword</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <OH_SubType/>
 </HEADER>
 <FILTER_OUTPUT state="1">
 <Filters>
-<filter Condition="C" FilterText="ERROR" Lnr="1" SrcName="REP" SrcType="R"/>
+<filter Condition="C" FilterText="UC4RB_SSH_COMMAND_STATUS::=FAILED" Lnr="1" SrcName="REP" SrcType="R"/>
 </Filters>
 <OperatorAND>0</OperatorAND>
 <OperatorOR>1</OperatorOR>

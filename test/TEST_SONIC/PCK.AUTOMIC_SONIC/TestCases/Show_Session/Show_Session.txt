@@ -1,0 +1,33 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        show_session
+Test Template     Show Session Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK
+Show Session          OK
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "SHOW SESSION"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Show Session Template
+    [Arguments]    ${OK_NOK}
+    [Documentation]    This action tests the feature Show Session.
+    Init Action    ${SHOW_SESSION_ACTION}
+    Connect using SSH
+    Action Execute
+    Assert Success
+    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT#
+
+Teardown
+    Log    *******End Test "SHOW SESSION"*******

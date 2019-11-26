@@ -1,0 +1,47 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        show_running_configuration
+Test Template     Show Running Configuration Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK                                                           ConfigurationDetail
+Show Running Configuration with Configuration Detail as BGP
+                      [Tags]                                                           main_scenarios
+                      OK                                                               BGP
+
+Show Running Configuration with Configuration Detail as Interfaces
+                      OK                                                               Interfaces
+                      #Show Running Configuration with Configuration Detail as NTP
+                      #                                                                OK                     NTP
+                      #Show Running Configuration with Configuration Detail as SNMP
+                      #                                                                OK                     SNMP
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "SHOW RUNNING CONFIGURATION"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Show Running Configuration Template
+    [Arguments]    ${OK_NOK}    ${ConfigurationDetail}
+    [Documentation]    This action tests the feature of Show Running Configuration.
+    ...    -Note: Test Case commemnted as they are not working on setup done by us. Verifying command formation manually.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${ConfigurationDetail}: This field specify kind of configuration information should be retrieved.
+    Generate String
+    Init Action    ${SHOW_RUNNING_CONFIGURATION_ACTION}
+    Connect using SSH
+    Action Set    &UC4RB_SONIC_CONFIG_DETAIL#    ${ConfigurationDetail}
+    Action Execute
+    Assert Success
+    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT#
+
+Teardown
+    Log    *******End Test "SHOW RUNNING CONFIGURATION"*******
