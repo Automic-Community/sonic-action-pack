@@ -114,9 +114,7 @@
 !-----------Building command arguments-------------
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.HEADER.EXECUTION
 : INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.LOGGING_SSH_PARAM
-: SET &UC4RB_LOGGING_PARAMETER# = "Configuration Minigraph File"
-: SET &UC4RB_LOGGING_PARAMETER_VAL# = "&UC4RB_SONIC_MINIGR_CONFIG_FILE#"
-: INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.PARAM
+
 : INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN
 ! Status messages
 : SET &UC4RB_LOGGING_INFO# = "******** LOAD CONFIGURATION FROM MINIGRAPH FILE ACTION EXECUTED  ********"
@@ -125,7 +123,7 @@
 
 :INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.ATTACH_RESOURCE
 
-: SET &UC4RB_SSH_COMMAND# = " config load_minigraph -y &UC4RB_SONIC_MINIGR_CONFIG_FILE# "
+: SET &UC4RB_SSH_COMMAND# = " config load_minigraph -y "
 : INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.SSH_RUN_COMMAND@UNIX
 !------------------------------------------ ERROR HANDLING ----------------------------------------------------
 : INC PCK.AUTOMIC_AIOPS.PUB.INCLUDE.CHECK_JOBSTATUS@UNIX
@@ -133,7 +131,9 @@
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
-<filterobjects/>
+<filterobjects>
+<row Icon="FILTER" condition="true" execute="" filter="PCK.AUTOMIC_SONIC.PRV.FILTER.SSH_ERROR" lnr="1" return="9" statustext=""/>
+</filterobjects>
 <HostFsc/>
 <LoginFsc/>
 </OUTPUTSCAN>
