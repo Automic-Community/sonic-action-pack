@@ -57,11 +57,15 @@ Following actions are supported.
 * Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_INTERFACES
 * Action Description: This Action will be used to execute show interfaces command.
 
+* Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.LOAD_CONFIGURATION_FROM_MINIGRAPH_FILE
+* Action Description: This action will Load Configuration from a given MiniGraph file.
+
+* Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.LOAD_MANAGEMENT_CONFIGURATION
+* Action Description: This action will Load Management Configuration from a given file.
+
 * Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.GATHER_TROUBLESHOOTING_INFO
 * Action Description: This action will Gather Troubleshooting Info.
 
-* Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.RUN_SONIC_COMMAND
-* Action Description: This action will execute a command on target sonic system.
 
 * Action Name: PCK.AUTOMIC_SONIC.PUB.ACTION.SHOW_SESSION
 * Action Description:  This Action list sessions which are being used at the moment.
@@ -83,6 +87,7 @@ Following actions are supported.
 
 * Action name: PCK.AUTOMIC_SONIC.PUB.ACTION.RELOAD_CONFIGURATION
 * Action Description: This action reloads the configuration from a JSON file.
+
 
 ]]></DOC>
 </DOCU_Docu>

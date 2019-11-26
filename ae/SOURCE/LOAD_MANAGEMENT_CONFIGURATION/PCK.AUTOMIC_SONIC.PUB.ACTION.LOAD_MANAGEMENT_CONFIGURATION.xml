@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
-<JOBP AllowExternal="1" name="PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_MEMBER_PORT_FROM_VLAN">
+<JOBP AllowExternal="1" name="PCK.AUTOMIC_SONIC.PUB.ACTION.LOAD_MANAGEMENT_CONFIGURATION">
 <XHEADER state="1">
-<Title>Delete member port from VLAN</Title>
+<Title>Load Management Configuration</Title>
 <ArchiveKey1/>
 <ArchiveKey2/>
 <Active>1</Active>
@@ -71,11 +71,10 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
-<UC4RB_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
-<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<UC4RB_SONIC_CONFIG_FILEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -97,7 +96,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="DELETE_MEMBER_PORT_FROM_VLAN" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_SONIC.PRV.JOB.DELETE_MEMBER_PORT_FROM_VLAN@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
+<task Alias="LOAD_MANAGEMENT_CONFIGURATION" BranchType="0" Col="2" Lnr="2" OType="JOBS" Object="PCK.AUTOMIC_SONIC.PRV.JOB.LOAD_MANAGEMENT_CONFIGURATION@WINDOWS" ParentAlias="" ParentObject="" Row="1" Text2="">
 <checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -145,11 +144,10 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
-<UC4RB_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
-<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<UC4RB_SONIC_CONFIG_FILEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -171,7 +169,7 @@
 </PostCon>
 </postconditions>
 </task>
-<task Alias="DELETE_MEMBER_PORT_FROM_VLAN" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_SONIC.PRV.JOB.DELETE_MEMBER_PORT_FROM_VLAN@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
+<task Alias="LOAD_MANAGEMENT_CONFIGURATION" BranchType="0" Col="2" Lnr="3" OType="JOBS" Object="PCK.AUTOMIC_SONIC.PRV.JOB.LOAD_MANAGEMENT_CONFIGURATION@UNIX" ParentAlias="" ParentObject="" Row="3" Text2="">
 <checkpoint RollbackFlag="0" RunPerPatch="0" RunPerTarget="0" TcpADays="0" TcpATime="00:00" TcpATimeTZ="" TcpExecute="" TcpOn="0" promptatgen="0" showprompt="0"/>
 <after ActFlg="1" AtimOn="0" ErlstStDays="0" ErlstStTime="00:00" ErlstStTimeTZ="" HoldFlg="0"/>
 <when ChkWhenExec="0" LtstEnd="0" LtstEndDays="0" LtstEndTime="00:00" LtstSt="0" LtstStDays="0" LtstStTime="00:00" LtstTimeTZ="" WCTypeAND="1" WCTypeOR="0" WElseA="1" WElseH="0" WElseS="0" WElseX="0" WhenExecute="" WtimOn="0"/>
@@ -219,11 +217,10 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
-<UC4RB_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
-<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<UC4RB_SONIC_CONFIG_FILEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -280,11 +277,10 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" parent="PPRPTS" type="PPROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN">
-<UC4RB_SONIC_MEMBER_PORTs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_MEMBER_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
-<UC4RB_SONIC_VLAN_IDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_VLAN_ID#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN"/>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PPRPTS" type="PPROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION">
+<UC4RB_SONIC_CONFIG_FILEs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SONIC_CONFIG_FILE#" promptsetname="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -369,11 +365,10 @@
 </PRPTBOX>
 </PROMPTSET>
 </node>
-<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" parent="PRPTS" type="PROMPTSET">
-<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" ontop="1">
-<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.DELETE_MEMBER_PORT_FROM_VLAN" prptmode="1">
-<UC4RB_SONIC_VLAN_IDs.00 altview="0" haslist="0"/>
-<UC4RB_SONIC_MEMBER_PORTs.00 altview="0" haslist="0"/>
+<node content="1" id="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" parent="PRPTS" type="PROMPTSET">
+<PROMPTSET name="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" ontop="1">
+<PRPTBOX promptset="PCK.AUTOMIC_SONIC.PRV.PROMPTSET.LOAD_MANAGEMENT_CONFIGURATION" prptmode="1">
+<UC4RB_SONIC_CONFIG_FILEs.00 altview="0" haslist="0"/>
 </PRPTBOX>
 </PROMPTSET>
 </node>
@@ -408,18 +403,16 @@
 </SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC><![CDATA[= Action name =
-PCK.AUTOMIC_SONIC.PUB.ACTION.DELETE_MEMBER_PORT_FROM_VLAN
+PCK.AUTOMIC_SONIC.PUB.ACTION.LOAD_MANAGEMENT_CONFIGURATION
 
 = General description =
-This action will Delete a member port from VLAN on sonic.
+This action will Load Management Configuration from a given file. So that users can apply already prepared configuration to the environment.
 
 
 = Inputs =
-- VLAN ID*                        : Provide ID of the VLAN to be deleted. E.g. 100
-- Member Port*                    : Provide Member Port name to removed from the VLAN. E.g. Ethernet4
-
+- Management Configuration File*     :                 Provide management configuration file name with full path to load. E.g. /etc/sonic/device_desc.xml
 = Failure Conditions =
-If the user provides invalid or not existing VLAN ID or Member port.
+If the user provides invalid or not existing file.
 If the user will not provide Sudo credentials properly.
 
 = Behaviour =
@@ -429,8 +422,7 @@ If the user will not provide Sudo credentials properly.
 (none)
 
 = Example =
-* VLAN ID                                 : 100
-* Member Port                             : Ethernet4
+* Management Configuration File           : /etc/sonic/device_desc.xml
 ----------------------------------------------]]></DOC>
 </DOCU_Docu>
 </JOBP>
