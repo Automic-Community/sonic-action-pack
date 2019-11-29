@@ -18,7 +18,7 @@
 		<timestamp>${maven.build.timestamp}</timestamp>
 		<maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
 		<jersey.version>1.19</jersey.version>
-		<staging.profile.id>7d271c35419c73</staging.profile.id>
+		<staging.profile.id>30c1271048e52c</staging.profile.id>
 		<jar.name>sonic-ssh</jar.name>
 	</properties>
 
