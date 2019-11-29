@@ -63,7 +63,7 @@
 <UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SSH_PASSWORDs.00>
 <UC4RB_SSH_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
-<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
+<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">300</UC4RB_SSH_TIMEOUTs.00>
 <UC4RB_SSH_TTYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
 <UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
@@ -136,7 +136,7 @@
 <UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SSH_PASSWORDs.00>
 <UC4RB_SSH_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
-<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
+<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">300</UC4RB_SSH_TIMEOUTs.00>
 <UC4RB_SSH_TTYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
 <UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
@@ -209,7 +209,7 @@
 <UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SSH_PASSWORDs.00>
 <UC4RB_SSH_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
-<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
+<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">300</UC4RB_SSH_TIMEOUTs.00>
 <UC4RB_SSH_TTYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
 <UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
@@ -269,7 +269,7 @@
 <UC4RB_SSH_PASSPHRASEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSPHRASE#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SSH_PASSWORDs.00>
 <UC4RB_SSH_PORTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_PORT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">22</UC4RB_SSH_PORTs.00>
-<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">30</UC4RB_SSH_TIMEOUTs.00>
+<UC4RB_SSH_TIMEOUTs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TIMEOUT#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">300</UC4RB_SSH_TIMEOUTs.00>
 <UC4RB_SSH_TTYs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_TTY#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">NO</UC4RB_SSH_TTYs.00>
 <UC4RB_SSH_USERNAMEs.00 ReadFromTable="OPSE" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SSH_USERNAME#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS"/>
 <UC4RB_SUDO_SSH_PASSWORDs.00 ReadFromTable="OPUD" altview="0" haslist="0" msginsert="" msgnr="" promptname="UC4RB_SUDO_SSH_PASSWORD#" promptsetname="PCK.AUTOMIC_SONIC.PUB.PROMPTSET.SSH_CONNECTION_DETAILS">--10</UC4RB_SUDO_SSH_PASSWORDs.00>
@@ -406,7 +406,7 @@ If the user does not provide sudo credentials properly.
 = Behaviour =
 This action is used to load the configuration from a JSON file like the file which SONiC saves its configuration to, /etc/sonic/config_db.json 
 This action loads the configuration from the input file (if user specifies this optional filename, it will use that input file. 
-Otherwise, it will use the default /etc/sonic/config_db.jsonfile as the input file) into CONFIG_DB. 
+Otherwise, it will use the default /etc/sonic/config_db.jsonÂfile as the input file) into CONFIG_DB. 
 The configuration present in the input file is applied on top of the already running configuration.
 This action does not flush the config DB before loading the new configuration (i.e., If the configuration present in the input file is same as the current running configuration, 
 nothing happens) If the config present in the input file is not present in running configuration, it will be added. 
