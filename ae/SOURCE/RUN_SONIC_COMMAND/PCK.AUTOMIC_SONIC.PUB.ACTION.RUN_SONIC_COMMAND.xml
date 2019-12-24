@@ -440,7 +440,7 @@ PCK.AUTOMIC_SONIC.PUB.ACTION.RUN_SONIC_COMMAND
 This action will execute a command on sonic.
 
 
-=Setup=ÃÂÃÂ
+=Setup=
 * For SSH, Enable SSH on the target system.
 
 = Inputs =
