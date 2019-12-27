@@ -113,7 +113,7 @@
 
 !-----------Building command arguments-------------
 : INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.HEADER.EXECUTION
-: INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.LOGGING_SSH_PARAM
+
 
 : INCLUDE PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN
 ! Status messages
@@ -140,9 +140,7 @@
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
-<filterobjects>
-<row Icon="FILTER" condition="true" execute="" filter="PCK.AUTOMIC_SONIC.PRV.FILTER.SSH_ERROR" lnr="1" return="9" statustext=""/>
-</filterobjects>
+<filterobjects/>
 <HostFsc/>
 <LoginFsc/>
 </OUTPUTSCAN>

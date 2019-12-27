@@ -139,9 +139,7 @@
 </SCRIPT>
 <OUTPUTSCAN state="1">
 <Inherit>N</Inherit>
-<filterobjects>
-<row Icon="FILTER" condition="true" execute="" filter="PCK.AUTOMIC_SONIC.PRV.FILTER.SSH_ERROR" lnr="1" return="9" statustext=""/>
-</filterobjects>
+<filterobjects/>
 <HostFsc/>
 <LoginFsc/>
 </OUTPUTSCAN>
