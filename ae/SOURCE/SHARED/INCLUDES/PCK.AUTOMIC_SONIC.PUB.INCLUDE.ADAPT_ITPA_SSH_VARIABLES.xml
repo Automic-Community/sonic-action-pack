@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_SONIC.PUB.INCLUDE.ADAPT_ITPA_SSH_VARIABLES">
+<HEADER state="1">
+<Title>Adapt ITPA SSH Variables</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[: SET &UC4RB_SSH_OPTIONS# = ""
+
+: IF &UC4RB_SSH_HOST_KEY_CHECK# = "YES"
+:   SET &UC4RB_SSH_OPTIONS# = STR_CAT(&UC4RB_SSH_OPTIONS#,"Strict Host Key Check ")
+: ENDIF
+
+: IF &UC4RB_SSH_TTY# = "YES"
+:   SET &UC4RB_SSH_OPTIONS# = STR_CAT(&UC4RB_SSH_OPTIONS#,"Allocate TTY ")
+: ENDIF
+
+: IF &UC4RB_USE_SSH_SUDO# = "Sudo"
+:   SET &UC4RB_SSH_OPTIONS# = STR_CAT(&UC4RB_SSH_OPTIONS#,"Sudo ")
+: ENDIF]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</JOBI>
+</uc-export>
