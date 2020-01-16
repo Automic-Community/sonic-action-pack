@@ -97,7 +97,9 @@
 <dyntree>
 <node content="1" id="VALUE" name="Variables" parent="" type="VALUE">
 <VALUE state="1">
-<Values/>
+<Values>
+<row ERTUsage="0" Name="&amp;UC4RB_SONIC_OUTPUT_FILE#" Value=""/>
+</Values>
 <Mode>0</Mode>
 </VALUE>
 </node>
@@ -131,10 +133,10 @@
 :INC PCK.ITPA_SHARED.PUB.INCLUDE.ATTACH_SSH_RESOURCE
 
 : IF &UC4RB_SONIC_TARGET_FILE# NE ""
-:   RSET &UC4RB_SONIC_OUTPUT_FILE# = &UC4RB_SONIC_TARGET_FILE#
+:   SET &UC4RB_SONIC_OUTPUT_FILE# = &UC4RB_SONIC_TARGET_FILE#
 :   INC PCK.ITPA_SHARED.PRV.INCLUDE.ESCAPE_CHARS@POWERSHELL &UC4RB_ESCAPED_STRING# = &UC4RB_SONIC_OUTPUT_FILE#
 : ELSE
-:   RSET &UC4RB_SONIC_OUTPUT_FILE# = STR_CAT(&AGENT_TEMPDIR#,"troubleshoot-log-&$RUNID#.log")
+:   SET &UC4RB_SONIC_OUTPUT_FILE# = STR_CAT(&AGENT_TEMPDIR#,"troubleshoot-log-&$RUNID#.log")
 : ENDIF
 
 : SET &UC4RB_SONIC_GATHR_TRBLE_CMD# = "show techsupport "
@@ -150,9 +152,11 @@
 !Build java arguments
 :INC PCK.ITPA_SHARED.PUB.INCLUDE.SSH_PREPARE_ARGS
 java -jar "&UC4RB_SSH_JARPATH#" -action RunCommandAction &UC4RB_SSH_ARGS# -cmdfile "&UC4RB_FILE_PATH#" -outputmode 1 -outfile  "&UC4RB_SONIC_OUTPUT_FILE#" -errfile "&AGENT_TEMPDIR#tempdir-&$RUNID#/error-&$RUNID#.log"
- if(!$?) {
+if(!$?) {
         $errors = 1
-      }
+        $null=remove-item "&UC4RB_SONIC_OUTPUT_FILE#"
+        type "&AGENT_TEMPDIR#tempdir-&$RUNID#/error-&$RUNID#.log"
+}
 
 !------------------------------------------ ERROR HANDLING ----------------------------------------------------
 : INC PCK.AUTOMIC_SONIC.PUB.INCLUDE.CHECK_JOBSTATUS@WIN]]></MSCRI>
@@ -165,9 +169,10 @@ java -jar "&UC4RB_SSH_JARPATH#" -action RunCommandAction &UC4RB_SSH_ARGS# -cmdfi
 </OUTPUTSCAN>
 <POST_SCRIPT mode="1" replacementmode="1" state="1">
 <OSCRI><![CDATA[: SET &STATUS# = GET_UC_OBJECT_STATUS(,,"RETCODE")
-: IF &STATUS# NE 0
-:   SET &UC4RB_SONIC_OUTPUT_FILE# = ""
-: ENDIF]]></OSCRI>
+: IF &STATUS# EQ 0
+:   PUBLISH &UC4RB_SONIC_OUTPUT_FILE#,,WORKFLOW
+: ENDIF
+]]></OSCRI>
 </POST_SCRIPT>
 <DOCU_Docu state="1" type="text">
 <DOC/>
