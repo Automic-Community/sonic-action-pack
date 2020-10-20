@@ -1,0 +1,45 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        reload_configuration
+Test Template     Reload Configuration Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK    ConfigFile
+Reload Configuration while providing Configuration File is valid
+                      [Tags]    main_scenarios
+                      OK        ${Config_File}
+
+Reload Configuration while providing Configuration File is Empty
+                      NOK       ${EMPTY}
+
+Reload Configuration while providing Configuration File is invalid
+                      NOK       Invalid
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "RELOAD CONFIGURATION"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Reload Configuration Template
+    [Arguments]    ${OK_NOK}    ${ConfigFile}
+    [Documentation]    This action reloads configuration.
+    ...    -${OK_NOK}: Boolean value indicate if the action is ENDED_OK or ENDED_NOT_OK. Value of this variable should be OK or NOK.
+    ...    -${ConfigFile}: This field specifies configuration file name with full path to load if reload should be done from file.
+    Generate String
+    Init Action    ${RELOAD_CONFIG_ACTION}
+    Connect using SSH
+    Run Keyword If    '${ConfigFile}' == 'Invalid'    Action Set    &UC4RB_SONIC_CONFIG_FILE#    ${Generated_Name}    ELSE    Action Set
+    ...    &UC4RB_SONIC_CONFIG_FILE#    ${ConfigFile}
+    Action Execute
+    Run Keyword If    '${OK_NOK}' == 'OK'    Assert Success    ELSE    Assert Failure
+
+Teardown
+    Log    *******End Test "RELOAD CONFIGURATION"*******

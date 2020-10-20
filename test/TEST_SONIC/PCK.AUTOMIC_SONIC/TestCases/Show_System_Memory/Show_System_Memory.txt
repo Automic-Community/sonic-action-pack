@@ -1,0 +1,33 @@
+*** Settings ***
+Suite Setup       Startup
+Suite Teardown    Teardown
+Force Tags        show_system_memory
+Test Template     Show System Memory Template
+Library           com.automic.robot.itpa.ItpaLibrary
+Library           String
+Library           DateTime
+Resource          ../../Resources/messages.txt
+Resource          ../../Resources/keywords.txt
+Resource          ../../Resources/variables.txt
+Resource          ../../Resources/actions.txt
+
+*** Test Cases ***    OK_NOK
+Show System Memory    OK
+
+*** Keywords ***
+Startup
+    Log    *******Start Test "SHOW SYSTEM MEMORY"*******
+    Log    *******Connect to AE*******
+    Connect AE
+
+Show System Memory Template
+    [Arguments]    ${OK_NOK}
+    [Documentation]    This action tests the feature Show System Memory.
+    Init Action    ${SHOW_SYSTEM_MEMORY_ACTION}
+    Connect using SSH
+    Action Execute
+    Assert Success
+    Action Object Variable Should Be Found    &UC4RB_SONIC_OUTPUT#
+
+Teardown
+    Log    *******End Test "SHOW SYSTEM MEMORY"*******
